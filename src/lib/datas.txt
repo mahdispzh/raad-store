@@ -1,0 +1,482 @@
+
+//                                    get                                    //
+/api/protected/addresses
+{
+  "data": [],
+  "meta": {
+    "total": 0,
+    "page": 1,
+    "limit": 10,
+    "hasMore": false
+  }
+}
+
+/api/protected/addresses/{addressId}
+{
+  "id": 28,
+  "user_id": 67,
+  "province": "fars",
+  "city": "shz",
+  "address": "ar",
+  "postal_code": "88888888",
+  "receiver_name": "ftm",
+  "receiver_phone": "0937"
+}
+
+/api/protected/blogs 
+{
+  "data": [
+    {
+      "id": 1,
+      "title": "How To Improve Ecommerce Sales",
+      "slug": "improve-ecommerce-sales",
+      "content": "Sample blog content...",
+      "status": 1,
+      "user_id": 1,
+      "created_at": "2026-05-22T18:49:18.029Z",
+      "updated_at": "2026-05-22T18:49:18.029Z",
+      "comments": 5
+    }
+  ],
+  "meta": {
+    "total": 1,
+    "page": 1,
+    "limit": 10,
+    "hasMore": false
+  }
+}
+
+/api/protected/brands
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "Nike",
+      "slug": "nike",
+      "image": "/brands/nike.png"
+    },
+    {
+      "id": 4,
+      "name": "Adidas",
+      "slug": "adidas",
+      "image": "/brands/adidas.png"
+    }
+  ],
+  "meta": {
+    "total": 2,
+    "page": 1,
+    "limit": 10,
+    "hasMore": false
+  }
+}
+
+/api/protected/brands/{brandId}
+{
+  "id": 1,
+  "name": "Nike",
+  "slug": "nike",
+  "image": "/brands/nike.png"
+}
+
+/api/protected/categories
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "Shoes",
+      "slug": "shoes",
+      "parent_id": null
+    },
+    {
+      "id": 10,
+      "name": "T-Shirts",
+      "slug": "tshirts",
+      "parent_id": null
+    }
+  ],
+  "meta": {
+    "total": 2,
+    "page": 1,
+    "limit": 10,
+    "hasMore": false
+  }
+}
+
+/api/protected/categories/{categoryId}
+{
+  "id": 1,
+  "name": "Shoes",
+  "slug": "shoes",
+  "parent_id": null
+}
+
+/api/protected/colors
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "Black",
+      "hex_code": "#000000"
+    },
+    {
+      "id": 9,
+      "name": "White",
+      "hex_code": "#FFFFFF"
+    }
+  ],
+  "meta": {
+    "total": 2,
+    "page": 1,
+    "limit": 10,
+    "hasMore": false
+  }
+}
+
+/api/protected/colors/{colorId}
+{
+  "id": 9,
+  "name": "White",
+  "hex_code": "#FFFFFF"
+}
+
+/api/protected/discounts
+{
+  "data": [
+    {
+      "id": 1,
+      "code": "OFF20",
+      "type": 1,
+      "value": 20
+    }
+  ],
+  "meta": {
+    "total": 1,
+    "page": 1,
+    "limit": 10,
+    "hasMore": false
+  }
+}
+
+/api/protected/discounts/{discountId}
+{
+  "id": 1,
+  "code": "OFF20",
+  "type": 1,
+  "value": 20
+}
+
+/api/protected/orders
+{
+  "currentUser": 67,
+  "users": [
+    {
+      "id": 45,
+      "phone": "09172473880",
+      "name": null,
+      "role": 2,
+      "created_at": null
+    },
+    {
+      "id": 47,
+      "phone": "09227091688",
+      "name": null,
+      "role": 2,
+      "created_at": null
+    },
+    {
+      "id": 49,
+      "phone": "09370149919",
+      "name": null,
+      "role": 2,
+      "created_at": null
+    },
+    {
+      "id": 51,
+      "phone": "09031759442",
+      "name": null,
+      "role": 1,
+      "created_at": null
+    },
+    {
+      "id": 53,
+      "phone": "09031759443",
+      "name": null,
+      "role": 1,
+      "created_at": null
+    },
+    {
+      "id": 55,
+      "phone": "09178889944",
+      "name": null,
+      "role": 1,
+      "created_at": null
+    },
+    {
+      "id": 57,
+      "phone": "09173363636",
+      "name": null,
+      "role": 1,
+      "created_at": null
+    },
+    {
+      "id": 59,
+      "phone": "09176321212",
+      "name": null,
+      "role": 1,
+      "created_at": null
+    },
+    {
+      "id": 61,
+      "phone": "09176451254",
+      "name": null,
+      "role": 1,
+      "created_at": null
+    },
+    {
+      "id": 63,
+      "phone": "09176202955",
+      "name": null,
+      "role": 1,
+      "created_at": null
+    },
+    {
+      "id": 65,
+      "phone": "09332203030",
+      "name": null,
+      "role": 1,
+      "created_at": null
+    },
+    {
+      "id": 71,
+      "phone": "09120000000",
+      "name": "Ali Ahmadi",
+      "role": 0,
+      "created_at": "2026-05-22T18:46:17.672Z"
+    },
+    {
+      "id": 67,
+      "phone": "09176202911",
+      "name": null,
+      "role": 2,
+      "created_at": null
+    },
+    {
+      "id": 73,
+      "phone": "+989176202911",
+      "name": null,
+      "role": 2,
+      "created_at": null
+    },
+    {
+      "id": 75,
+      "phone": "+989370149919",
+      "name": null,
+      "role": 2,
+      "created_at": null
+    },
+    {
+      "id": 77,
+      "phone": "+989172473880",
+      "name": null,
+      "role": 2,
+      "created_at": null
+    }
+  ]
+}
+
+/api/protected/payments/me
+{
+  "data": [],
+  "meta": {
+    "total": 0,
+    "page": 1,
+    "limit": 10,
+    "hasMore": false
+  }
+}
+
+/api/protected/payments
+{
+  "data": [],
+  "meta": {
+    "total": 0,
+    "page": 1,
+    "limit": 10,
+    "hasMore": false
+  }
+}
+
+/api/protected/products
+{
+  "data": [],
+  "meta": {
+    "total": 0,
+    "page": 1,
+    "limit": 10,
+    "hasMore": false
+  }
+}
+
+/api/protected/profile
+{
+  "id": 67,
+  "name": null,
+  "phone": "09176202911",
+  "mail": null,
+  "role": 2,
+  "created_at": null
+}
+
+/api/protected/sizes
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "M",
+      "sort_order": 1
+    },
+    {
+      "id": 7,
+      "name": "L",
+      "sort_order": 2
+    }
+  ],
+  "meta": {
+    "total": 2,
+    "page": 1,
+    "limit": 10,
+    "hasMore": false
+  }
+}
+
+/api/protected/sizes/{sizeId}
+{
+  "id": 7,
+  "name": "L",
+  "sort_order": 2
+}
+
+/api/protected/users
+{
+  "currentUser": 67,
+  "data": [
+    {
+      "id": 45,
+      "phone": "09172473880",
+      "name": null,
+      "role": 2,
+      "created_at": null
+    },
+    {
+      "id": 47,
+      "phone": "09227091688",
+      "name": null,
+      "role": 2,
+      "created_at": null
+    },
+    {
+      "id": 49,
+      "phone": "09370149919",
+      "name": null,
+      "role": 2,
+      "created_at": null
+    },
+    {
+      "id": 51,
+      "phone": "09031759442",
+      "name": null,
+      "role": 1,
+      "created_at": null
+    },
+    {
+      "id": 53,
+      "phone": "09031759443",
+      "name": null,
+      "role": 1,
+      "created_at": null
+    },
+    {
+      "id": 55,
+      "phone": "09178889944",
+      "name": null,
+      "role": 1,
+      "created_at": null
+    },
+    {
+      "id": 57,
+      "phone": "09173363636",
+      "name": null,
+      "role": 1,
+      "created_at": null
+    },
+    {
+      "id": 59,
+      "phone": "09176321212",
+      "name": null,
+      "role": 1,
+      "created_at": null
+    },
+    {
+      "id": 61,
+      "phone": "09176451254",
+      "name": null,
+      "role": 1,
+      "created_at": null
+    },
+    {
+      "id": 63,
+      "phone": "09176202955",
+      "name": null,
+      "role": 1,
+      "created_at": null
+    }
+  ],
+  "meta": {
+    "total": 16,
+    "page": 1,
+    "limit": 10,
+    "hasMore": true
+  }
+}
+
+/api/protected/users/{userId}
+{
+  "id": 63,
+  "name": null,
+  "mail": null,
+  "phone": "09176202955",
+  "role": 1,
+  "created_at": null,
+  "updated_at": null,
+  "carts": [],
+  "orders": [],
+  "user_addresses": []
+}
+
+//                                    put                                    //
+
+
+/api/protected/addresses/{addressId}
+{
+  "id": 28,
+  "user_id": 67,
+  "province": "shz",
+  "city": "<city>",
+  "address": "<address>",
+  "postal_code": "<postalCode>",
+  "receiver_name": "<receiverName>",
+  "receiver_phone": "<receiverPhone>"
+}
+
+/api/protected/profile
+{
+  "name": "<name>",
+  "mail": "<mail>",
+  "phone": "09176202911",
+  "password": null,
+  "created_at": null,
+  "updated_at": null,
+  "id": 67,
+  "role": 2
+}
+

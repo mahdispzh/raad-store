@@ -1,0 +1,12 @@
+{
+  "profile": {
+    "addToCart": "افزودن به سبد خرید با خطا مواجه شد",
+    "ratingSubmitted": "ثبت امتیاز انجام نشد",
+    "commentSubmitted": "ثبت نظر با مشکل مواجه شد",
+    "removedFromWishlist": "حذف از علاقه‌مندی‌ها انجام نشد",
+    "profileSaved": "ذخیره اطلاعات انجام نشد",
+    "profileUpdated": "به‌روزرسانی اطلاعات انجام نشد",
+    "verificationCodeSent": "ارسال کد تایید با خطا مواجه شد",
+    "logout": "خروج با مشکل مواجه شد"
+  }
+}

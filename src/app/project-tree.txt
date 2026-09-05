@@ -1,0 +1,1348 @@
+Folder PATH listing for volume New Volume
+Volume serial number is 000000A7 1877:7A0D
+D:.
+¦   favicon.ico
+¦   layout.tsx
+¦   page copy.tsx
+¦   project-tree.txt
+¦   robots.ts
+¦   sitemap.ts
+¦   
++---(auth)
+¦   ¦   layout.tsx
+¦   ¦   
+¦   +---send-otp
+¦   ¦   +---(pages)
+¦   ¦   ¦       page.tsx
+¦   ¦   ¦       
+¦   ¦   +---components
+¦   ¦   ¦       login-form.tsx
+¦   ¦   ¦       Readme.txt
+¦   ¦   ¦       
+¦   ¦   +---constants
+¦   ¦   ¦       Readme.txt
+¦   ¦   ¦       
+¦   ¦   +---hooks
+¦   ¦   ¦       useSendOtp.ts
+¦   ¦   ¦       useSendOtpForAction.ts
+¦   ¦   ¦       
+¦   ¦   +---services
+¦   ¦   ¦       send-otp.api.ts
+¦   ¦   ¦       
+¦   ¦   +---types
+¦   ¦           Readme.txt
+¦   ¦           
+¦   +---verify-otp
+¦       +---(pages)
+¦       ¦       page.tsx
+¦       ¦       
+¦       +---components
+¦       ¦       Readme.txt
+¦       ¦       verify-form.tsx
+¦       ¦       
+¦       +---constants
+¦       ¦       Readme.txt
+¦       ¦       
+¦       +---hooks
+¦       ¦       Readme.txt
+¦       ¦       useCountdown.ts
+¦       ¦       useVerifyOtp.ts
+¦       ¦       useVerifyOtpForAction.ts
+¦       ¦       
+¦       +---services
+¦       ¦       Readme.txt
+¦       ¦       verify-otp.api.ts
+¦       ¦       
+¦       +---types
+¦               Readme.txt
+¦               
++---(landing)
+¦   ¦   layout.tsx
+¦   ¦   
+¦   +---(home)
+¦   ¦   +---(pages)
+¦   ¦   ¦       page.tsx
+¦   ¦   ¦       
+¦   ¦   +---_components
+¦   ¦   ¦       categories-card.ui.tsx
+¦   ¦   ¦       category-slider.ui.tsx
+¦   ¦   ¦       custom-slider.ui.tsx
+¦   ¦   ¦       main.tsx
+¦   ¦   ¦       product-card.ui.tsx
+¦   ¦   ¦       product-section.ui.tsx
+¦   ¦   ¦       product-slider.ui.tsx
+¦   ¦   ¦       
+¦   ¦   +---_constants
+¦   ¦   ¦       landing.constants.ts
+¦   ¦   ¦       metadata.ts
+¦   ¦   ¦       
+¦   ¦   +---_hooks
+¦   ¦   ¦       useLanding.ts
+¦   ¦   ¦       
+¦   ¦   +---_services
+¦   ¦   ¦       home.server.ts
+¦   ¦   ¦       
+¦   ¦   +---_types
+¦   ¦   ¦       landing.types.ts
+¦   ¦   ¦       
+¦   ¦   +---_utils
+¦   ¦           product-transformer.ts
+¦   ¦           
+¦   +---about-us
+¦   ¦   +---(pages)
+¦   ¦   ¦       page.tsx
+¦   ¦   ¦       
+¦   ¦   +---_components
+¦   ¦   ¦       main.tsx
+¦   ¦   ¦       
+¦   ¦   +---_constants
+¦   ¦   ¦       about-us.json
+¦   ¦   ¦       metadata.ts
+¦   ¦   ¦       
+¦   ¦   +---_hooks
+¦   ¦   ¦       useAboutData.ts
+¦   ¦   ¦       
+¦   ¦   +---_services
+¦   ¦   ¦       about-us.api.ts
+¦   ¦   ¦       
+¦   ¦   +---_types
+¦   ¦           about.types.ts
+¦   ¦           
+¦   +---application
+¦   ¦   +---(pages)
+¦   ¦   ¦       page.tsx
+¦   ¦   ¦       Readme.txt
+¦   ¦   ¦       
+¦   ¦   +---components
+¦   ¦   ¦       Readme.txt
+¦   ¦   ¦       
+¦   ¦   +---constants
+¦   ¦   ¦       metadata.ts
+¦   ¦   ¦       Readme.txt
+¦   ¦   ¦       
+¦   ¦   +---hooks
+¦   ¦   ¦       Readme.txt
+¦   ¦   ¦       
+¦   ¦   +---services
+¦   ¦   ¦       mutations.ts
+¦   ¦   ¦       queries.ts
+¦   ¦   ¦       Readme.txt
+¦   ¦   ¦       
+¦   ¦   +---types
+¦   ¦           Readme.txt
+¦   ¦           
+¦   +---blogs
+¦   ¦   +---(pages)
+¦   ¦   ¦   ¦   metadata.ts
+¦   ¦   ¦   ¦   page.tsx
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---[blog]
+¦   ¦   ¦           metadata.ts
+¦   ¦   ¦           page.tsx
+¦   ¦   ¦           
+¦   ¦   +---_components
+¦   ¦   ¦       blog-actions.tsx
+¦   ¦   ¦       blog-breadcrumb.tsx
+¦   ¦   ¦       blog-client.tsx
+¦   ¦   ¦       blog-content.tsx
+¦   ¦   ¦       blog-details.tsx
+¦   ¦   ¦       blog-header.tsx
+¦   ¦   ¦       blog-image.tsx
+¦   ¦   ¦       blog-meta.tsx
+¦   ¦   ¦       blogs-card.tsx
+¦   ¦   ¦       blogs-filter.tsx
+¦   ¦   ¦       blogs-list.tsx
+¦   ¦   ¦       LikeButton.tsx
+¦   ¦   ¦       
+¦   ¦   +---_hooks
+¦   ¦   ¦       useRecentlyBlogs.ts
+¦   ¦   ¦       useSavedBlogs.ts
+¦   ¦   ¦       
+¦   ¦   +---_services
+¦   ¦   ¦       blog.api.ts
+¦   ¦   ¦       like-blog.api.ts
+¦   ¦   ¦       recently-blog.service.ts
+¦   ¦   ¦       recently-blogs.api.ts
+¦   ¦   ¦       saved-blogs.api.ts
+¦   ¦   ¦       
+¦   ¦   +---_types
+¦   ¦   ¦       blogs-filter-type.ts
+¦   ¦   ¦       blogs.ts
+¦   ¦   ¦       
+¦   ¦   +---_utils
+¦   ¦           blog.mapper.ts
+¦   ¦           
+¦   +---faq
+¦   ¦   +---(pages)
+¦   ¦   ¦       page.tsx
+¦   ¦   ¦       
+¦   ¦   +---_components
+¦   ¦   ¦       dynamic-icon.ui.tsx
+¦   ¦   ¦       faq-accordion.ui.tsx
+¦   ¦   ¦       faq-grid.ui.tsx
+¦   ¦   ¦       main.tsx
+¦   ¦   ¦       
+¦   ¦   +---_constants
+¦   ¦   ¦       faq-constants.ts
+¦   ¦   ¦       metadata.ts
+¦   ¦   ¦       
+¦   ¦   +---_hooks
+¦   ¦   ¦       useFaq.ts
+¦   ¦   ¦       
+¦   ¦   +---_types
+¦   ¦           faq-types.ts
+¦   ¦           
+¦   +---products
+¦   ¦   +---(pages)
+¦   ¦   ¦   ¦   metadata.ts
+¦   ¦   ¦   ¦   page.tsx
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---[slug]
+¦   ¦   ¦           metadata.ts
+¦   ¦   ¦           page.tsx
+¦   ¦   ¦           
+¦   ¦   +---_components
+¦   ¦   ¦       add-review-modal.tsx
+¦   ¦   ¦       color-filter-content.tsx
+¦   ¦   ¦       color-filter.tsx
+¦   ¦   ¦       comment-item.tsx
+¦   ¦   ¦       feature-card.tsx
+¦   ¦   ¦       filter-color.tsx
+¦   ¦   ¦       filters-container.tsx
+¦   ¦   ¦       LandingProduct.tsx
+¦   ¦   ¦       LandingProducts.tsx
+¦   ¦   ¦       login-flow-modal.tsx
+¦   ¦   ¦       login-required-modal.tsx
+¦   ¦   ¦       material-filter.tsx
+¦   ¦   ¦       material-filtercontent.tsx
+¦   ¦   ¦       price-filter.tsx
+¦   ¦   ¦       primary-card.tsx
+¦   ¦   ¦       product-description.tsx
+¦   ¦   ¦       product-images.tsx
+¦   ¦   ¦       product-info.tsx
+¦   ¦   ¦       review-submit-type-modal.tsx
+¦   ¦   ¦       review-summary.tsx
+¦   ¦   ¦       reviews-box.tsx
+¦   ¦   ¦       secondary-card.tsx
+¦   ¦   ¦       similar-products.tsx
+¦   ¦   ¦       sort-bar.tsx
+¦   ¦   ¦       store-card-actions.tsx
+¦   ¦   ¦       suggested-products.tsx
+¦   ¦   ¦       
+¦   ¦   +---_constants
+¦   ¦   ¦       colors.ts
+¦   ¦   ¦       materials.ts
+¦   ¦   ¦       products.ts
+¦   ¦   ¦       productSample.ts
+¦   ¦   ¦       sort.ts
+¦   ¦   ¦       
+¦   ¦   +---_hooks
+¦   ¦   ¦       commentService.ts
+¦   ¦   ¦       useCartt.ts
+¦   ¦   ¦       useLandingProduct.ts
+¦   ¦   ¦       useLandingProductLogic.ts
+¦   ¦   ¦       useLandingProducts.ts
+¦   ¦   ¦       useLandingProductsLogic.ts
+¦   ¦   ¦       
+¦   ¦   +---_services
+¦   ¦   ¦       cart.api.ts
+¦   ¦   ¦       colors.server.ts
+¦   ¦   ¦       comment.api.ts
+¦   ¦   ¦       like-product.api.ts
+¦   ¦   ¦       like.api.ts
+¦   ¦   ¦       products.server.ts
+¦   ¦   ¦       
+¦   ¦   +---_types
+¦   ¦   ¦       index.ts
+¦   ¦   ¦       landing-product.types.ts
+¦   ¦   ¦       landing-products.types.ts
+¦   ¦   ¦       product.ts
+¦   ¦   ¦       Readme.txt
+¦   ¦   ¦       
+¦   ¦   +---_ui
+¦   ¦   ¦       price-input.tsx
+¦   ¦   ¦       
+¦   ¦   +---_utils
+¦   ¦           convertApiProduct.ts
+¦   ¦           product-helpers.ts
+¦   ¦           
+¦   +---terms
+¦   ¦   +---(pages)
+¦   ¦   ¦       page.tsx
+¦   ¦   ¦       
+¦   ¦   +---_components
+¦   ¦   ¦       main.tsx
+¦   ¦   ¦       
+¦   ¦   +---_constants
+¦   ¦   ¦       metadata.ts
+¦   ¦   ¦       terms.json
+¦   ¦   ¦       
+¦   ¦   +---_hooks
+¦   ¦   ¦       use-accordion.ts
+¦   ¦   ¦       
+¦   ¦   +---_types
+¦   ¦           terms.types.ts
+¦   ¦           
+¦   +---tutorial
+¦       +---(pages)
+¦       ¦       page.tsx
+¦       ¦       Readme.txt
+¦       ¦       
+¦       +---components
+¦       ¦       Readme.txt
+¦       ¦       
+¦       +---constants
+¦       ¦       metadata.ts
+¦       ¦       Readme.txt
+¦       ¦       
+¦       +---hooks
+¦       ¦       Readme.txt
+¦       ¦       
+¦       +---services
+¦       ¦       mutations.ts
+¦       ¦       queries.ts
+¦       ¦       Readme.txt
+¦       ¦       
+¦       +---types
+¦               Readme.txt
+¦               
++---api
+¦   +---auth
+¦   ¦   +---debug
+¦   ¦   ¦       route.ts
+¦   ¦   ¦       
+¦   ¦   +---logout
+¦   ¦   ¦       route.ts
+¦   ¦   ¦       
+¦   ¦   +---me
+¦   ¦   ¦       route.ts
+¦   ¦   ¦       
+¦   ¦   +---refresh
+¦   ¦   ¦       route.ts
+¦   ¦   ¦       
+¦   ¦   +---send-otp
+¦   ¦   ¦       route.ts
+¦   ¦   ¦       
+¦   ¦   +---verify-otp
+¦   ¦           route.ts
+¦   ¦           
+¦   +---check
+¦   ¦   +---database
+¦   ¦           route.ts
+¦   ¦           
+¦   +---docs
+¦   ¦       route.ts
+¦   ¦       
+¦   +---protected
+¦   ¦   +---addresses
+¦   ¦   ¦   ¦   route.ts
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---[addressId]
+¦   ¦   ¦           route.ts
+¦   ¦   ¦           
+¦   ¦   +---admin-overview
+¦   ¦   ¦   +---addresses
+¦   ¦   ¦   ¦   ¦   route.ts
+¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   +---_lib
+¦   ¦   ¦   ¦           chart.ts
+¦   ¦   ¦   ¦           report.ts
+¦   ¦   ¦   ¦           summary.ts
+¦   ¦   ¦   ¦           
+¦   ¦   ¦   +---blogs
+¦   ¦   ¦   ¦   ¦   route.ts
+¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   +---_lib
+¦   ¦   ¦   ¦           chart.ts
+¦   ¦   ¦   ¦           report.ts
+¦   ¦   ¦   ¦           summary.ts
+¦   ¦   ¦   ¦           
+¦   ¦   ¦   +---brands
+¦   ¦   ¦   ¦   ¦   route.ts
+¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   +---_lib
+¦   ¦   ¦   ¦           chart.ts
+¦   ¦   ¦   ¦           report.ts
+¦   ¦   ¦   ¦           summary.ts
+¦   ¦   ¦   ¦           
+¦   ¦   ¦   +---categories
+¦   ¦   ¦   ¦   ¦   route.ts
+¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   +---_lib
+¦   ¦   ¦   ¦           chart.ts
+¦   ¦   ¦   ¦           report.ts
+¦   ¦   ¦   ¦           summary.ts
+¦   ¦   ¦   ¦           
+¦   ¦   ¦   +---comments
+¦   ¦   ¦   ¦   ¦   route.ts
+¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   +---_lib
+¦   ¦   ¦   ¦           chart.ts
+¦   ¦   ¦   ¦           report.ts
+¦   ¦   ¦   ¦           summary.ts
+¦   ¦   ¦   ¦           
+¦   ¦   ¦   +---inventory
+¦   ¦   ¦   ¦   ¦   route.ts
+¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   +---_lib
+¦   ¦   ¦   ¦           chart.ts
+¦   ¦   ¦   ¦           report.ts
+¦   ¦   ¦   ¦           summary.ts
+¦   ¦   ¦   ¦           
+¦   ¦   ¦   +---orders
+¦   ¦   ¦   ¦   ¦   route.ts
+¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   +---_lib
+¦   ¦   ¦   ¦           chart.ts
+¦   ¦   ¦   ¦           report.ts
+¦   ¦   ¦   ¦           summary.ts
+¦   ¦   ¦   ¦           
+¦   ¦   ¦   +---payments
+¦   ¦   ¦   ¦   ¦   route.ts
+¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   +---_lib
+¦   ¦   ¦   ¦           chart.ts
+¦   ¦   ¦   ¦           report.ts
+¦   ¦   ¦   ¦           summary.ts
+¦   ¦   ¦   ¦           
+¦   ¦   ¦   +---products
+¦   ¦   ¦   ¦   ¦   route.ts
+¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   +---_lib
+¦   ¦   ¦   ¦           chart.ts
+¦   ¦   ¦   ¦           report.ts
+¦   ¦   ¦   ¦           summary.ts
+¦   ¦   ¦   ¦           
+¦   ¦   ¦   +---users
+¦   ¦   ¦       ¦   route.ts
+¦   ¦   ¦       ¦   
+¦   ¦   ¦       +---_lib
+¦   ¦   ¦               chart.ts
+¦   ¦   ¦               report.ts
+¦   ¦   ¦               summary.ts
+¦   ¦   ¦               
+¦   ¦   +---banners
+¦   ¦   ¦   ¦   route.ts
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---[bannerId]
+¦   ¦   ¦           route.ts
+¦   ¦   ¦           
+¦   ¦   +---blogs
+¦   ¦   ¦   ¦   route.ts
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---recently
+¦   ¦   ¦   ¦       route.ts
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---saved
+¦   ¦   ¦   ¦       route.ts
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---[slug]
+¦   ¦   ¦       ¦   route.ts
+¦   ¦   ¦       ¦   
+¦   ¦   ¦       +---like
+¦   ¦   ¦               route.ts
+¦   ¦   ¦               
+¦   ¦   +---brands
+¦   ¦   ¦   ¦   README.md
+¦   ¦   ¦   ¦   route.ts
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---[brandId]
+¦   ¦   ¦           route.ts
+¦   ¦   ¦           
+¦   ¦   +---carts
+¦   ¦   ¦   ¦   README.md
+¦   ¦   ¦   ¦   route.ts
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---items
+¦   ¦   ¦       ¦   route.ts
+¦   ¦   ¦       ¦   
+¦   ¦   ¦       +---[itemId]
+¦   ¦   ¦               route.ts
+¦   ¦   ¦               
+¦   ¦   +---categories
+¦   ¦   ¦   ¦   README.md
+¦   ¦   ¦   ¦   route.ts
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---[categoryId]
+¦   ¦   ¦           route.ts
+¦   ¦   ¦           
+¦   ¦   +---colors
+¦   ¦   ¦   ¦   README.md
+¦   ¦   ¦   ¦   route.ts
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---[colorId]
+¦   ¦   ¦           route.ts
+¦   ¦   ¦           
+¦   ¦   +---comments
+¦   ¦   ¦       route.ts
+¦   ¦   ¦       
+¦   ¦   +---discounts
+¦   ¦   ¦   ¦   README.md
+¦   ¦   ¦   ¦   route.ts
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---[discountId]
+¦   ¦   ¦           route.ts
+¦   ¦   ¦           
+¦   ¦   +---notifications
+¦   ¦   ¦   ¦   route.ts
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---[notificationId]
+¦   ¦   ¦           route.ts
+¦   ¦   ¦           
+¦   ¦   +---orders
+¦   ¦   ¦   +---admin
+¦   ¦   ¦   ¦       route.ts
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---me
+¦   ¦   ¦   ¦       route.ts
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---report
+¦   ¦   ¦   ¦       route.ts
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---[orderId]
+¦   ¦   ¦           route.ts
+¦   ¦   ¦           
+¦   ¦   +---payments
+¦   ¦   ¦   ¦   route.ts
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---me
+¦   ¦   ¦   ¦       route.ts
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---[paymentId]
+¦   ¦   ¦           route.ts
+¦   ¦   ¦           
+¦   ¦   +---products
+¦   ¦   ¦   ¦   route.ts
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---recently-viewed
+¦   ¦   ¦   ¦       route.ts
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---[slug]
+¦   ¦   ¦       ¦   route.ts
+¦   ¦   ¦       ¦   
+¦   ¦   ¦       +---like
+¦   ¦   ¦               route.ts
+¦   ¦   ¦               
+¦   ¦   +---profile
+¦   ¦   ¦       route.ts
+¦   ¦   ¦       
+¦   ¦   +---sizes
+¦   ¦   ¦   ¦   route.ts
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---[sizeId]
+¦   ¦   ¦           route.ts
+¦   ¦   ¦           
+¦   ¦   +---user-overview
+¦   ¦   ¦   +---addresses
+¦   ¦   ¦   ¦   ¦   route.ts
+¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   +---_lib
+¦   ¦   ¦   ¦           report.ts
+¦   ¦   ¦   ¦           summary.ts
+¦   ¦   ¦   ¦           
+¦   ¦   ¦   +---comments
+¦   ¦   ¦   ¦   ¦   route.ts
+¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   +---_lib
+¦   ¦   ¦   ¦           report.ts
+¦   ¦   ¦   ¦           summary.ts
+¦   ¦   ¦   ¦           
+¦   ¦   ¦   +---orders
+¦   ¦   ¦   ¦   ¦   route.ts
+¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   +---_lib
+¦   ¦   ¦   ¦           report.ts
+¦   ¦   ¦   ¦           summary.ts
+¦   ¦   ¦   ¦           
+¦   ¦   ¦   +---payments
+¦   ¦   ¦       ¦   route.ts
+¦   ¦   ¦       ¦   
+¦   ¦   ¦       +---_lib
+¦   ¦   ¦               report.ts
+¦   ¦   ¦               summary.ts
+¦   ¦   ¦               
+¦   ¦   +---users
+¦   ¦   ¦   ¦   README.md
+¦   ¦   ¦   ¦   route.ts
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---[userId]
+¦   ¦   ¦       ¦   route.ts
+¦   ¦   ¦       ¦   
+¦   ¦   ¦       +---role
+¦   ¦   ¦               route.ts
+¦   ¦   ¦               
+¦   ¦   +---wishlist
+¦   ¦           route.ts
+¦   ¦           
+¦   +---public
+¦       +---banners
+¦       ¦       route.ts
+¦       ¦       
+¦       +---blogs
+¦       ¦   ¦   route.ts
+¦       ¦   ¦   
+¦       ¦   +---[slug]
+¦       ¦           route.ts
+¦       ¦           
+¦       +---brands
+¦       ¦   ¦   route.ts
+¦       ¦   ¦   
+¦       ¦   +---[brandId]
+¦       ¦           route.ts
+¦       ¦           
+¦       +---categories
+¦       ¦   ¦   route.ts
+¦       ¦   ¦   
+¦       ¦   +---[categoryId]
+¦       ¦           route.ts
+¦       ¦           
+¦       +---colors
+¦       ¦       route.ts
+¦       ¦       
+¦       +---discounts
+¦       ¦       route.ts
+¦       ¦       
+¦       +---products
+¦       ¦   ¦   route.ts
+¦       ¦   ¦   
+¦       ¦   +---[slug]
+¦       ¦           route.ts
+¦       ¦           
+¦       +---settings
+¦       ¦       route.ts
+¦       ¦       
+¦       +---sizes
+¦       ¦       route.ts
+¦       ¦       
+¦       +---store-information
+¦               route.ts
+¦               
++---dashboard
+¦   ¦   layout.tsx
+¦   ¦   
+¦   +---banners
+¦   ¦   +---(pages)
+¦   ¦   ¦       Readme.txt
+¦   ¦   ¦       
+¦   ¦   +---components
+¦   ¦   ¦       Readme.txt
+¦   ¦   ¦       
+¦   ¦   +---constants
+¦   ¦   ¦       Readme.txt
+¦   ¦   ¦       
+¦   ¦   +---hooks
+¦   ¦   ¦       Readme.txt
+¦   ¦   ¦       
+¦   ¦   +---services
+¦   ¦   ¦       mutations.ts
+¦   ¦   ¦       queries.ts
+¦   ¦   ¦       Readme.txt
+¦   ¦   ¦       
+¦   ¦   +---types
+¦   ¦           Readme.txt
+¦   ¦           
+¦   +---blogs
+¦   ¦   +---(pages)
+¦   ¦   ¦   ¦   page.tsx
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---[slug]
+¦   ¦   ¦           page.tsx
+¦   ¦   ¦           
+¦   ¦   +---_components
+¦   ¦   ¦   ¦   add-blog-modal.tsx
+¦   ¦   ¦   ¦   blog.schema.ts
+¦   ¦   ¦   ¦   blogs-table.tsx
+¦   ¦   ¦   ¦   confirm-modal.tsx
+¦   ¦   ¦   ¦   step1-content.tsx
+¦   ¦   ¦   ¦   step2-content.tsx
+¦   ¦   ¦   ¦   step3-content.tsx
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---rich-text-editor
+¦   ¦   ¦           editor.css
+¦   ¦   ¦           extensions.ts
+¦   ¦   ¦           index.ts
+¦   ¦   ¦           rich-text-editor.tsx
+¦   ¦   ¦           Toolbar.tsx
+¦   ¦   ¦           ToolbarButton.tsx
+¦   ¦   ¦           
+¦   ¦   +---_hooks
+¦   ¦   ¦       useBlog.ts
+¦   ¦   ¦       useDashboardBlogs.ts
+¦   ¦   ¦       useUpdateBlog.ts
+¦   ¦   ¦       
+¦   ¦   +---_services
+¦   ¦   ¦       blog.api.ts
+¦   ¦   ¦       
+¦   ¦   +---_utils
+¦   ¦           date.utils.ts
+¦   ¦           
+¦   +---categories
+¦   ¦   +---(pages)
+¦   ¦   ¦       page.tsx
+¦   ¦   ¦       Readme.txt
+¦   ¦   ¦       
+¦   ¦   +---components
+¦   ¦   ¦   ¦   add_list.tsx
+¦   ¦   ¦   ¦   category-sidebar.tsx
+¦   ¦   ¦   ¦   category-tab.tsx
+¦   ¦   ¦   ¦   item-category.tsx
+¦   ¦   ¦   ¦   main.tsx
+¦   ¦   ¦   ¦   Readme.txt
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---categories
+¦   ¦   ¦   ¦   ¦   page.tsx
+¦   ¦   ¦   ¦   ¦   redme.txt
+¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   +---api
+¦   ¦   ¦   ¦   ¦       category.api.ts
+¦   ¦   ¦   ¦   ¦       
+¦   ¦   ¦   ¦   +---components
+¦   ¦   ¦   ¦   ¦       category-delete-modal.tsx
+¦   ¦   ¦   ¦   ¦       category-modal.tsx
+¦   ¦   ¦   ¦   ¦       confirm-close-modal.tsx
+¦   ¦   ¦   ¦   ¦       
+¦   ¦   ¦   ¦   +---hook
+¦   ¦   ¦   ¦   ¦       use-categories.ts
+¦   ¦   ¦   ¦   ¦       use-category.ts
+¦   ¦   ¦   ¦   ¦       use-create-category.ts
+¦   ¦   ¦   ¦   ¦       use-delete-category.ts
+¦   ¦   ¦   ¦   ¦       use-update-category.ts
+¦   ¦   ¦   ¦   ¦       
+¦   ¦   ¦   ¦   +---lib
+¦   ¦   ¦   ¦   ¦       category-keys.ts
+¦   ¦   ¦   ¦   ¦       
+¦   ¦   ¦   ¦   +---schemas
+¦   ¦   ¦   ¦   ¦       category.schema.ts
+¦   ¦   ¦   ¦   ¦       
+¦   ¦   ¦   ¦   +---types
+¦   ¦   ¦   ¦           category.types.ts
+¦   ¦   ¦   ¦           
+¦   ¦   ¦   +---new items
+¦   ¦   ¦       ¦   more-items-modal.tsx
+¦   ¦   ¦       ¦   
+¦   ¦   ¦       +---modal-add-brand
+¦   ¦   ¦       ¦   ¦   moda-add-brand.tsx
+¦   ¦   ¦       ¦   ¦   
+¦   ¦   ¦       ¦   +---services
+¦   ¦   ¦       ¦           brands-api-post.ts
+¦   ¦   ¦       ¦           
+¦   ¦   ¦       +---modaladdcolors
+¦   ¦   ¦       ¦   ¦   moda-add-color.tsx
+¦   ¦   ¦       ¦   ¦   
+¦   ¦   ¦       ¦   +---services
+¦   ¦   ¦       ¦           color-api-post.ts
+¦   ¦   ¦       ¦           
+¦   ¦   ¦       +---modaladdsize
+¦   ¦   ¦           ¦   moda-add-size.tsx
+¦   ¦   ¦           ¦   
+¦   ¦   ¦           +---services
+¦   ¦   ¦                   size-api-post.ts
+¦   ¦   ¦                   
+¦   ¦   +---constants
+¦   ¦   ¦       Readme.txt
+¦   ¦   ¦       
+¦   ¦   +---hooks
+¦   ¦   ¦       Readme.txt
+¦   ¦   ¦       
+¦   ¦   +---types
+¦   ¦           Readme.txt
+¦   ¦           
+¦   +---comments
+¦   ¦   +---(pages)
+¦   ¦   ¦   ¦   page.tsx
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---[id]
+¦   ¦   ¦           page.tsx
+¦   ¦   ¦           
+¦   ¦   +---_components
+¦   ¦   ¦   ¦   comments-header.tsx
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---comments-card
+¦   ¦   ¦   ¦       comments-card-action.tsx
+¦   ¦   ¦   ¦       comments-card-image.tsx
+¦   ¦   ¦   ¦       comments-card-meta.tsx
+¦   ¦   ¦   ¦       comments-card.tsx
+¦   ¦   ¦   ¦       comments-list.tsx
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---product-card
+¦   ¦   ¦           commented-product-card.tsx
+¦   ¦   ¦           product-comment-card.tsx
+¦   ¦   ¦           product-comments-layout.tsx
+¦   ¦   ¦           product-comments-list.tsx
+¦   ¦   ¦           product-comments-summary.tsx
+¦   ¦   ¦           
+¦   ¦   +---_constants
+¦   ¦   ¦       comments.data.ts
+¦   ¦   ¦       product-comments.constants.ts
+¦   ¦   ¦       
+¦   ¦   +---_hooks
+¦   ¦   ¦       use-comments.ts
+¦   ¦   ¦       use-product-comments.ts
+¦   ¦   ¦       
+¦   ¦   +---_types
+¦   ¦           comments.types.ts
+¦   ¦           product-comments.types.ts
+¦   ¦           
+¦   +---discount-codes
+¦   ¦   +---(pages)
+¦   ¦   ¦       Readme.txt
+¦   ¦   ¦       
+¦   ¦   +---components
+¦   ¦   ¦       Readme.txt
+¦   ¦   ¦       
+¦   ¦   +---constants
+¦   ¦   ¦       Readme.txt
+¦   ¦   ¦       
+¦   ¦   +---hooks
+¦   ¦   ¦       Readme.txt
+¦   ¦   ¦       
+¦   ¦   +---services
+¦   ¦   ¦       mutations.ts
+¦   ¦   ¦       queries.ts
+¦   ¦   ¦       Readme.txt
+¦   ¦   ¦       
+¦   ¦   +---types
+¦   ¦           Readme.txt
+¦   ¦           
+¦   +---factors
+¦   ¦   +---(pages)
+¦   ¦   ¦   ¦   page.tsx
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---[id]
+¦   ¦   ¦       ¦   page.tsx
+¦   ¦   ¦       ¦   
+¦   ¦   ¦       +---invoice
+¦   ¦   ¦               page.tsx
+¦   ¦   ¦               
+¦   ¦   +---_components
+¦   ¦   ¦       dashboard-sidebar-stats.ui.tsx
+¦   ¦   ¦       factor-detail.ui.tsx
+¦   ¦   ¦       factor-invoice.ui.tsx
+¦   ¦   ¦       factor-table.ui.tsx
+¦   ¦   ¦       status-stepper.ui.tsx
+¦   ¦   ¦       stepper-modal.ui.tsx
+¦   ¦   ¦       
+¦   ¦   +---_constants
+¦   ¦   ¦       factors.constants.ts
+¦   ¦   ¦       status-icons.tsx
+¦   ¦   ¦       text.json
+¦   ¦   ¦       
+¦   ¦   +---_hooks
+¦   ¦   ¦       useDashboardFactors.ts
+¦   ¦   ¦       useDashboardStats.ts
+¦   ¦   ¦       useOrderData.ts
+¦   ¦   ¦       useOrderDetail.ts
+¦   ¦   ¦       
+¦   ¦   +---_services
+¦   ¦   ¦       dashboard-stats.api.ts
+¦   ¦   ¦       factors.api.ts
+¦   ¦   ¦       
+¦   ¦   +---_types
+¦   ¦   ¦       factors.types.ts
+¦   ¦   ¦       
+¦   ¦   +---_utils
+¦   ¦           exportExcel.ts
+¦   ¦           factors.utils.ts
+¦   ¦           
+¦   +---financial-information
+¦   ¦   +---(pages)
+¦   ¦           page.tsx
+¦   ¦           
+¦   +---home
+¦   ¦   +---(pages)
+¦   ¦   ¦       page.tsx
+¦   ¦   ¦       
+¦   ¦   +---_components
+¦   ¦   ¦       action-card.ui.tsx
+¦   ¦   ¦       inventory-card.ui.tsx
+¦   ¦   ¦       quick-card.ui.tsx
+¦   ¦   ¦       satisfaction-card.ui.tsx
+¦   ¦   ¦       status-card.ui.tsx
+¦   ¦   ¦       
+¦   ¦   +---_constants
+¦   ¦   ¦       dashboard-home.constants.ts
+¦   ¦   ¦       
+¦   ¦   +---_hooks
+¦   ¦   ¦       useAdminOverview.ts
+¦   ¦   ¦       useCategoriesOverview.ts
+¦   ¦   ¦       useDashboardHome.ts
+¦   ¦   ¦       useOrdersOverview.ts
+¦   ¦   ¦       
+¦   ¦   +---_services
+¦   ¦   ¦       admin-overview.api.ts
+¦   ¦   ¦       get-users.api.ts
+¦   ¦   ¦       
+¦   ¦   +---_types
+¦   ¦   ¦       dashboard-home.types.ts
+¦   ¦   ¦       
+¦   ¦   +---_ui
+¦   ¦   ¦   +---action-button
+¦   ¦   ¦           action-button.types.ts
+¦   ¦   ¦           action-button.ui.tsx
+¦   ¦   ¦           useActionButton.ts
+¦   ¦   ¦           
+¦   ¦   +---_utils
+¦   ¦           satisfaction.utils.ts
+¦   ¦           
+¦   +---notification
+¦   ¦   +---(pages)
+¦   ¦   ¦       Readme.txt
+¦   ¦   ¦       
+¦   ¦   +---components
+¦   ¦   ¦       Readme.txt
+¦   ¦   ¦       
+¦   ¦   +---constants
+¦   ¦   ¦       Readme.txt
+¦   ¦   ¦       
+¦   ¦   +---hooks
+¦   ¦   ¦       Readme.txt
+¦   ¦   ¦       
+¦   ¦   +---services
+¦   ¦   ¦       mutations.ts
+¦   ¦   ¦       queries.ts
+¦   ¦   ¦       Readme.txt
+¦   ¦   ¦       
+¦   ¦   +---types
+¦   ¦           Readme.txt
+¦   ¦           
+¦   +---payments
+¦   ¦   +---(pages)
+¦   ¦   ¦   ¦   page.tsx
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---all
+¦   ¦   ¦   ¦       page.tsx
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---[id]
+¦   ¦   ¦           page.tsx
+¦   ¦   ¦           
+¦   ¦   +---_components
+¦   ¦   ¦       all-transactions-table.tsx
+¦   ¦   ¦       dashboard-sidebar-stats.ui.tsx
+¦   ¦   ¦       payment-detail.ui.tsx
+¦   ¦   ¦       side-details.tsx
+¦   ¦   ¦       transactions-filter-modal.ui.tsx
+¦   ¦   ¦       transactions-table.tsx
+¦   ¦   ¦       
+¦   ¦   +---_constants
+¦   ¦   ¦       line-chart-dots.data.ts
+¦   ¦   ¦       payment-detail-data.ts
+¦   ¦   ¦       payment.constants.ts
+¦   ¦   ¦       transactions-table-data.ts
+¦   ¦   ¦       
+¦   ¦   +---_hooks
+¦   ¦   ¦       useDashboardStats.ts
+¦   ¦   ¦       usePayments.ts
+¦   ¦   ¦       
+¦   ¦   +---_services
+¦   ¦   ¦       dashboard-stats.api.ts
+¦   ¦   ¦       payments.api.ts
+¦   ¦   ¦       
+¦   ¦   +---_types
+¦   ¦           payments.types.ts
+¦   ¦           
+¦   +---products
+¦   ¦   +---(pages)
+¦   ¦   ¦       page.tsx
+¦   ¦   ¦       
+¦   ¦   +---_components
+¦   ¦   ¦   ¦   product-sidebar.tsx
+¦   ¦   ¦   ¦   product-status-card.tsx
+¦   ¦   ¦   ¦   product-tab.tsx
+¦   ¦   ¦   ¦   product-table-row.tsx
+¦   ¦   ¦   ¦   product-table.tsx
+¦   ¦   ¦   ¦   search-input.tsx
+¦   ¦   ¦   ¦   status-item.tsx
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---components
+¦   ¦   ¦   ¦   +---api
+¦   ¦   ¦   ¦   ¦       product.api.ts
+¦   ¦   ¦   ¦   ¦       
+¦   ¦   ¦   ¦   +---components
+¦   ¦   ¦   ¦   ¦       confirm-close-modal.tsx
+¦   ¦   ¦   ¦   ¦       product-delete-modal.tsx
+¦   ¦   ¦   ¦   ¦       
+¦   ¦   ¦   ¦   +---hook
+¦   ¦   ¦   ¦   ¦       useDeleteProduct.ts
+¦   ¦   ¦   ¦   ¦       useProduct.ts
+¦   ¦   ¦   ¦   ¦       useProducts.ts
+¦   ¦   ¦   ¦   ¦       useUpdateProduct.ts
+¦   ¦   ¦   ¦   ¦       
+¦   ¦   ¦   ¦   +---lib
+¦   ¦   ¦   ¦           product-keys.ts
+¦   ¦   ¦   ¦           
+¦   ¦   ¦   +---modal
+¦   ¦   ¦           AddProductFooter.tsx
+¦   ¦   ¦           AddProductModal.tsx
+¦   ¦   ¦           Step1ProductInfo.tsx
+¦   ¦   ¦           Step2ProductDetails.tsx
+¦   ¦   ¦           Step3ProductImages.tsx
+¦   ¦   ¦           
+¦   ¦   +---_constants
+¦   ¦   ¦       products.constants.ts
+¦   ¦   ¦       status-items.tsx
+¦   ¦   ¦       
+¦   ¦   +---_hooks
+¦   ¦   ¦       useAddProductForm.ts
+¦   ¦   ¦       useAddProductWizard.ts
+¦   ¦   ¦       useCreateProduct.ts
+¦   ¦   ¦       
+¦   ¦   +---_services
+¦   ¦   ¦       brand-api.ts
+¦   ¦   ¦       category-api.ts
+¦   ¦   ¦       color-api.ts
+¦   ¦   ¦       size-api.ts
+¦   ¦   ¦       
+¦   ¦   +---_types
+¦   ¦           product.types.ts
+¦   ¦           
+¦   +---profile
+¦   ¦   +---(pages)
+¦   ¦   ¦       page.tsx
+¦   ¦   ¦       
+¦   ¦   +---_components
+¦   ¦   ¦   ¦   financial-information.tsx
+¦   ¦   ¦   ¦   info-grid-item.tsx
+¦   ¦   ¦   ¦   owner-information.tsx
+¦   ¦   ¦   ¦   profile-title.tsx
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---dashboard-profile-menu
+¦   ¦   ¦   ¦       dashboard-profile-sidebar.tsx
+¦   ¦   ¦   ¦       dashboard-sidebar.types.ts
+¦   ¦   ¦   ¦       menu-items.ts
+¦   ¦   ¦   ¦       use-dashboard-sidebar.ts
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---multi-stage-medal
+¦   ¦   ¦   ¦       EditShopModal.tsx
+¦   ¦   ¦   ¦       modalInfo-shop-step-one.tsx
+¦   ¦   ¦   ¦       modalInfo-shop-step-two.tsx
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---profile-modal
+¦   ¦   ¦   ¦       profile-modal.tsx
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---shop-info
+¦   ¦   ¦           shop-contact-info.tsx
+¦   ¦   ¦           shop-header.tsx
+¦   ¦   ¦           shop-info.tsx
+¦   ¦   ¦           
+¦   ¦   +---_constants
+¦   ¦   ¦       info-shop.ts
+¦   ¦   ¦       profile-modal.constants.ts
+¦   ¦   ¦       
+¦   ¦   +---_hooks
+¦   ¦   ¦       Readme.txt
+¦   ¦   ¦       use-edit-shop-modal.ts
+¦   ¦   ¦       use-info-shop.ts
+¦   ¦   ¦       use-profile-modal.ts
+¦   ¦   ¦       
+¦   ¦   +---_services
+¦   ¦   ¦       Readme.txt
+¦   ¦   ¦       
+¦   ¦   +---_types
+¦   ¦           info-grid-item.types.ts
+¦   ¦           info-shop.type.ts
+¦   ¦           profile-modal.types.ts
+¦   ¦           Readme.txt
+¦   ¦           
+¦   +---store-information
+¦   ¦   +---(pages)
+¦   ¦           page.tsx
+¦   ¦           
+¦   +---users
+¦       +---(pages)
+¦       ¦       Readme.txt
+¦       ¦       
+¦       +---components
+¦       ¦       Readme.txt
+¦       ¦       
+¦       +---constants
+¦       ¦       Readme.txt
+¦       ¦       
+¦       +---hooks
+¦       ¦       Readme.txt
+¦       ¦       
+¦       +---services
+¦       ¦       mutations.ts
+¦       ¦       queries.ts
+¦       ¦       Readme.txt
+¦       ¦       
+¦       +---types
+¦               Readme.txt
+¦               
++---profile
+¦   ¦   layout.tsx
+¦   ¦   
+¦   +---addresses
+¦   ¦   +---(pages)
+¦   ¦   ¦       confirm-modal.tsx
+¦   ¦   ¦       page.tsx
+¦   ¦   ¦       
+¦   ¦   +---components
+¦   ¦   ¦   ¦   addresses-modal.ui.tsx
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---custom-input
+¦   ¦   ¦   ¦       custom-input-rhf.tsx
+¦   ¦   ¦   ¦       custom-input.constants.ts
+¦   ¦   ¦   ¦       custom-input.tsx
+¦   ¦   ¦   ¦       custom-input.types.ts
+¦   ¦   ¦   ¦       custom-input.utils.ts
+¦   ¦   ¦   ¦       index.ts
+¦   ¦   ¦   ¦       redme.txt
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---custom-select
+¦   ¦   ¦           index.ts
+¦   ¦   ¦           redme.txt
+¦   ¦   ¦           select-item.tsx
+¦   ¦   ¦           select-rhf.tsx
+¦   ¦   ¦           select.constants.ts
+¦   ¦   ¦           select.tsx
+¦   ¦   ¦           select.types.ts
+¦   ¦   ¦           use-select.ts
+¦   ¦   ¦           
+¦   ¦   +---constants
+¦   ¦   ¦       iran-locations.json
+¦   ¦   ¦       
+¦   ¦   +---hooks
+¦   ¦   ¦       useAddresses.ts
+¦   ¦   ¦       
+¦   ¦   +---services
+¦   ¦   ¦       address.api.ts
+¦   ¦   ¦       
+¦   ¦   +---types
+¦   ¦           address.types.ts
+¦   ¦           
+¦   +---cart
+¦   ¦   +---(pages)
+¦   ¦   ¦       page.tsx
+¦   ¦   ¦       
+¦   ¦   +---_components
+¦   ¦   ¦       cart-section.tsx
+¦   ¦   ¦       cart-summary.tsx
+¦   ¦   ¦       landing-cart.tsx
+¦   ¦   ¦       next-buy-section.tsx
+¦   ¦   ¦       
+¦   ¦   +---_constants
+¦   ¦   ¦       cart.constants.ts
+¦   ¦   ¦       
+¦   ¦   +---_hooks
+¦   ¦   ¦       useCart.ts
+¦   ¦   ¦       
+¦   ¦   +---_services
+¦   ¦   ¦       card.api.ts
+¦   ¦   ¦       
+¦   ¦   +---_types
+¦   ¦           cart.types.ts
+¦   ¦           
+¦   +---comments
+¦   ¦   +---(pages)
+¦   ¦   ¦       page.tsx
+¦   ¦   ¦       
+¦   ¦   +---components
+¦   ¦   ¦       comment-card.tsx
+¦   ¦   ¦       comments-main.tsx
+¦   ¦   ¦       
+¦   ¦   +---constants
+¦   ¦   ¦       comment-status.constants.ts
+¦   ¦   ¦       
+¦   ¦   +---hooks
+¦   ¦   ¦       useComments.ts
+¦   ¦   ¦       
+¦   ¦   +---services
+¦   ¦   ¦       comment.api.ts
+¦   ¦   ¦       
+¦   ¦   +---types
+¦   ¦   ¦       comment.types.ts
+¦   ¦   ¦       
+¦   ¦   +---_utils
+¦   ¦           date.utils.ts
+¦   ¦           
+¦   +---home
+¦   ¦   +---(pages)
+¦   ¦   ¦       page.tsx
+¦   ¦   ¦       
+¦   ¦   +---_components
+¦   ¦   ¦       home-body.tsx
+¦   ¦   ¦       order-summary.tsx
+¦   ¦   ¦       
+¦   ¦   +---_hooks
+¦   ¦   ¦       useFrequentProducts.ts
+¦   ¦   ¦       useHomeOrders.ts
+¦   ¦   ¦       
+¦   ¦   +---_services
+¦   ¦   ¦       home.api.ts
+¦   ¦   ¦       
+¦   ¦   +---_types
+¦   ¦   ¦       home.types.ts
+¦   ¦   ¦       
+¦   ¦   +---_utils
+¦   ¦           frequent-product-mapper.ts
+¦   ¦           
+¦   +---notification
+¦   ¦   +---(pages)
+¦   ¦   ¦       page.tsx
+¦   ¦   ¦       
+¦   ¦   +---_components
+¦   ¦   ¦       notification-list-item.tsx
+¦   ¦   ¦       notifications.ui.tsx
+¦   ¦   ¦       
+¦   ¦   +---_constants
+¦   ¦   ¦       notification.constants.ts
+¦   ¦   ¦       
+¦   ¦   +---_services
+¦   ¦   +---_types
+¦   ¦           notifications-modal.types.ts
+¦   ¦           
+¦   +---orders
+¦   ¦   +---(pages)
+¦   ¦   ¦   ¦   page.tsx
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---[id]
+¦   ¦   ¦       ¦   page.tsx
+¦   ¦   ¦       ¦   
+¦   ¦   ¦       +---invoice
+¦   ¦   ¦               page.tsx
+¦   ¦   ¦               
+¦   ¦   +---_components
+¦   ¦   ¦       button-comment.tsx
+¦   ¦   ¦       order-card-current.tsx
+¦   ¦   ¦       order-card-delivered.tsx
+¦   ¦   ¦       order-card-returned.tsx
+¦   ¦   ¦       order-delivered.tsx
+¦   ¦   ¦       order-details-card.tsx
+¦   ¦   ¦       order-details-header.tsx
+¦   ¦   ¦       order-details-main.tsx
+¦   ¦   ¦       order-header-item.tsx
+¦   ¦   ¦       order-returned.tsx
+¦   ¦   ¦       order-shipment-item.tsx
+¦   ¦   ¦       profile-tab.tsx
+¦   ¦   ¦       profile-tabs-section.tsx
+¦   ¦   ¦       
+¦   ¦   +---_constants
+¦   ¦   ¦       text.json
+¦   ¦   ¦       
+¦   ¦   +---_hooks
+¦   ¦   ¦       use-order-details.ts
+¦   ¦   ¦       use-orders-query.ts
+¦   ¦   ¦       useOrderData.ts
+¦   ¦   ¦       useOrders.ts
+¦   ¦   ¦       
+¦   ¦   +---_services
+¦   ¦   ¦       orders.api.ts
+¦   ¦   ¦       
+¦   ¦   +---_types
+¦   ¦   ¦       order.types.ts
+¦   ¦   ¦       
+¦   ¦   +---_utils
+¦   ¦           order-helpers.ts
+¦   ¦           order-mappers.ts
+¦   ¦           
+¦   +---payment
+¦   ¦   +---(pages)
+¦   ¦   ¦       page.tsx
+¦   ¦   ¦       
+¦   ¦   +---_components
+¦   ¦   ¦   ¦   header.tsx
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---address
+¦   ¦   ¦   ¦       address-item.tsx
+¦   ¦   ¦   ¦       address-selection-modal-content.tsx
+¦   ¦   ¦   ¦       summary-address-selector.tsx
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---order
+¦   ¦   ¦   ¦       orders-summary.tsx
+¦   ¦   ¦   ¦       orders.tsx
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---payment
+¦   ¦   ¦   ¦       payment-gateway.tsx
+¦   ¦   ¦   ¦       payment-method.tsx
+¦   ¦   ¦   ¦       payment-options.tsx
+¦   ¦   ¦   ¦       payment-status-failed-like.ui.tsx
+¦   ¦   ¦   ¦       payment-status.ui.tsx
+¦   ¦   ¦   ¦       payment-success-info.tsx
+¦   ¦   ¦   ¦       payment-success-item.tsx
+¦   ¦   ¦   ¦       payment-summary.tsx
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---shiping
+¦   ¦   ¦           shipping-method.tsx
+¦   ¦   ¦           shipping-options.tsx
+¦   ¦   ¦           shipping-summary.tsx
+¦   ¦   ¦           
+¦   ¦   +---_constants
+¦   ¦   ¦       payment-status.constants.ts
+¦   ¦   ¦       payment.constants.ts
+¦   ¦   ¦       payment.data.ts
+¦   ¦   ¦       shipping-method.json
+¦   ¦   ¦       
+¦   ¦   +---_hooks
+¦   ¦   ¦       useAddress.ts
+¦   ¦   ¦       useAddressManager.ts
+¦   ¦   ¦       useCartData.ts
+¦   ¦   ¦       useCartManager.ts
+¦   ¦   ¦       useCheckoutNavigation.ts
+¦   ¦   ¦       useDiscount.ts
+¦   ¦   ¦       useDiscountHandler.ts
+¦   ¦   ¦       useOrderCreation.ts
+¦   ¦   ¦       useOrders.ts
+¦   ¦   ¦       usePayment.ts
+¦   ¦   ¦       usePaymentFacade.ts
+¦   ¦   ¦       usePaymentProcess.ts
+¦   ¦   ¦       usePaymentReducer.ts
+¦   ¦   ¦       usePaymentVerification.ts
+¦   ¦   ¦       
+¦   ¦   +---_services
+¦   ¦   ¦       address.api.ts
+¦   ¦   ¦       cart.api.ts
+¦   ¦   ¦       order.api.ts
+¦   ¦   ¦       payment.api.ts
+¦   ¦   ¦       
+¦   ¦   +---_types
+¦   ¦           address.types.ts
+¦   ¦           common.types.ts
+¦   ¦           hooks.types.ts
+¦   ¦           order.types.ts
+¦   ¦           payment-status.types.ts
+¦   ¦           payment.types.ts
+¦   ¦           shipping.types.ts
+¦   ¦           
+¦   +---recently-view
+¦   ¦   +---(pages)
+¦   ¦   ¦       page.tsx
+¦   ¦   ¦       Readme.txt
+¦   ¦   ¦       
+¦   ¦   +---_components
+¦   ¦   ¦       main.tsx
+¦   ¦   ¦       
+¦   ¦   +---_hooks
+¦   ¦   ¦       useRecentlyViewed.ts
+¦   ¦   ¦       
+¦   ¦   +---_services
+¦   ¦   ¦       recently-view.api.ts
+¦   ¦   ¦       
+¦   ¦   +---_types
+¦   ¦           recently-view.types.ts
+¦   ¦           
+¦   +---wishlist
+¦       +---(pages)
+¦       ¦       page.tsx
+¦       ¦       
+¦       +---_components
+¦       ¦       main.tsx
+¦       ¦       
+¦       +---_hooks
+¦       ¦       useWishlist.ts
+¦       ¦       
+¦       +---_services
+¦       ¦       wishlist.api.ts
+¦       ¦       
+¦       +---_types
+¦               wishlist.types.ts
+¦               
++---swagger
+¦       page.tsx
+¦       swagger-theme.css
+¦       
++---test
+¦       page.tsx
+¦       
++---test-icon
+        page.tsx
+        

@@ -1,0 +1,205 @@
+/* ===========================
+   Root Editor
+=========================== */
+
+.rich-editor {
+  min-height: 320px;
+  direction: rtl;
+  text-align: justify;
+  text-align-last: right;
+  line-height: 1.5;
+  color: #111827;
+  font-size: 17px;
+  outline: none;
+  caret-color: #2563eb;
+  font-family: primary;
+}
+
+/* ===========================
+   Placeholder
+=========================== */
+
+.rich-editor p.is-editor-empty:first-child::before {
+  content: attr(data-placeholder);
+  color: #9ca3af;
+  pointer-events: none;
+  float: right;
+  height: 0;
+}
+
+/* ===========================
+   Paragraph
+=========================== */
+
+.rich-editor p {
+  margin: 0.8rem 0;
+}
+
+/* ===========================
+   Heading
+=========================== */
+
+.rich-editor h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 1.5rem 0 1rem;
+}
+
+.rich-editor h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 1.4rem 0 0.8rem;
+}
+
+.rich-editor h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 1rem 0 0.6rem;
+}
+
+/* ===========================
+   List
+=========================== */
+
+.rich-editor ul,
+.rich-editor ol {
+  padding-inline-start: 1.8rem;
+  margin: 1rem 0;
+}
+
+.rich-editor ul {
+  list-style: disc;
+}
+
+.rich-editor ol {
+  list-style: decimal;
+}
+
+.rich-editor li {
+  margin: 0.35rem 0;
+}
+
+.rich-editor li p {
+  margin: 0;
+}
+
+/* ===========================
+   Quote
+=========================== */
+
+.rich-editor blockquote {
+  border-right: 4px solid #2563eb;
+  background: #f8fafc;
+  padding: 1rem;
+  margin: 1rem 0;
+  font-style: italic;
+}
+
+/* ===========================
+   Horizontal Rule
+=========================== */
+
+.rich-editor hr {
+  border: none;
+  border-top: 1px solid #d1d5db;
+  margin: 2rem 0;
+}
+
+/* ===========================
+   Link
+=========================== */
+
+.rich-editor a {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+.rich-editor a:hover {
+  opacity: 0.8;
+}
+
+/* ===========================
+   Highlight
+=========================== */
+
+.rich-editor mark {
+  background: #fef08a;
+  color: inherit;
+  border-radius: 2px;
+  padding: 0 0.15rem;
+}
+
+/* ===========================
+   Selection
+=========================== */
+
+.rich-editor ::selection {
+  background: rgba(37, 99, 235, 0.2);
+}
+
+/* ===========================
+   Focus
+=========================== */
+
+.ProseMirror {
+  outline: none;
+}
+
+/* ===========================
+   Strong
+=========================== */
+
+.rich-editor strong {
+  font-weight: 700;
+}
+
+/* ===========================
+   Code
+=========================== */
+
+.rich-editor code {
+  background: #f3f4f6;
+  padding: 0.15rem 0.35rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width: 768px) {
+  .rich-editor {
+    min-height: 260px;
+    font-size: 14px;
+  }
+
+  .rich-editor h1 {
+    font-size: 1.7rem;
+  }
+
+  .rich-editor h2 {
+    font-size: 1.4rem;
+  }
+
+  .rich-editor h3 {
+    font-size: 1.2rem;
+  }
+}
+
+/* ===========================
+   Image
+=========================== */
+
+.rich-editor img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 1rem 0 1rem auto;
+}
+
+.rich-editor img.ProseMirror-selectednode {
+  outline: 3px solid #2563eb;
+  outline-offset: 2px;
+}

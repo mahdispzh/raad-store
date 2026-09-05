@@ -1,0 +1,131 @@
+/* GLOBAL LAYOUT (Stripe-like clean UI) */
+.swagger-wrapper {
+    /* background: #0b0f19; */
+    min-height: 100vh;
+}
+
+/* TOP BAR */
+.swagger-ui .topbar {
+    display: none;
+}
+
+/* SIDEBAR */
+.swagger-ui .information-container {
+    display: none;
+}
+
+/* MAIN BACKGROUND */
+.swagger-ui {
+    /* background: #0b0f19; */
+}
+
+/* SECTION HEADERS (tags) */
+.swagger-ui .opblock-tag {
+    font-size: 18px;
+    font-weight: 600;
+    color: #27272b;
+    border: 1px solid #8a8a8a;
+    margin-top: 20px;
+    background-color: #c5c5c5;
+    border-radius: 12px;
+}
+
+/* ENDPOINT CARDS */
+.swagger-ui .opblock {
+    border-radius: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #1f2937;
+    background: #111827;
+}
+
+/* METHOD COLORS (Stripe-like subtle tones) */
+.swagger-ui .opblock.opblock-get {
+    border-left: 4px solid #3b82f6;
+}
+
+.swagger-ui .opblock.opblock-post {
+    border-left: 4px solid #22c55e;
+}
+
+.swagger-ui .opblock.opblock-put {
+    border-left: 4px solid #f59e0b;
+}
+
+.swagger-ui .opblock.opblock-delete {
+    border-left: 4px solid #ef4444;
+}
+
+/* FONT */
+.swagger-ui * {
+    font-family: ui-sans-serif, system-ui;
+}
+
+/* SCROLL CLEAN */
+.swagger-ui .wrapper {
+    max-width: 1200px;
+}
+
+/* 🔥 STRIPE-LIKE AUTH BAR FIXED TOP */
+.swagger-ui .auth-wrapper {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    position: fixed;
+    top: 4vw;
+    left: 2vw;
+}
+
+/* API KEY INPUT LOOK */
+.swagger-ui .auth-container {
+    background: #ffffff;
+    border: 1px solid #1f2937;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* AUTHORIZE BUTTON (Stripe style) */
+.swagger-ui .btn.authorize {
+
+    background: #485367;
+    border-radius: 8px;
+    z-index: 10000 !important;
+    color: white;
+}
+
+.swagger-ui .btn.authorize:hover {
+    background: #2563eb;
+}
+
+/* LEFT SIDEBAR FIXED STYLE */
+.swagger-ui .opblock-tag-section {
+    border-left: 2px solid #1f2937;
+    padding-left: 10px;
+}
+
+/* SCROLL SMOOTH */
+.swagger-ui {
+    scroll-behavior: smooth;
+}
+
+/* CLEAN BACKGROUND */
+.swagger-ui .wrapper {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.swagger-ui .request-url,
+.swagger-ui .opblock-description-wrapper:first-child,
+.swagger-ui .opblock-section-header,
+.swagger-ui .curl-command,
+.swagger-ui .responses-inner h4,
+.swagger-ui .responses-inner .response-col_status,
+.swagger-ui .responses-inner .response-col_description__inner,
+.swagger-ui .responses-inner .response-col_links,
+.swagger-ui .responses-inner .response-col_description div:nth-child(0),
+.responses-header {
+    display: hidden;
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    background-color: #22c55e;
+}

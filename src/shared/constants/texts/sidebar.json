@@ -1,0 +1,52 @@
+[
+  {
+    "icon": "home",
+    "title": "خلاصه فعالیت ها",
+    "count": "5",
+    "link": "/home"
+  },
+  {
+    "icon": "order",
+    "title": "سفارش ها",
+    "count": "3",
+    "link": "/orders"
+  },
+  {
+    "icon": "like",
+    "title": "علاقه مندی ها",
+    "count": "5",
+    "link": "/wishlist"
+  },
+  {
+    "icon": "comment",
+    "title": "دیدگاه و نظرات",
+    "count": "5",
+    "link": "/comments"
+  },
+  {
+    "icon": "location",
+    "title": "ادرس ها",
+    "count": "5",
+    "link": "/addresses"
+  },
+  {
+    "icon": "message",
+    "title": "اعلان ها",
+    "count": "5",
+    "link": "/notification"
+  },
+  
+  
+  {
+    "icon": "history",
+    "title": "بازدید های اخیر",
+    "count": "5",
+    "link": "/recently-view"
+  },
+  {
+    "icon": "exit",
+    "title": "خروج از حساب کاربری",
+    "count": "5",
+    "link": "/logout"
+  }
+]

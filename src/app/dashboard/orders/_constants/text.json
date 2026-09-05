@@ -1,0 +1,105 @@
+{
+  "order": {
+    "invoice": {
+      "title": "صورت حساب الکترونیکی فروش",
+      "button": "پرینت / دانلود",
+      "fields": {
+        "invoiceNumber": "شماره فاکتور:",
+        "economicCode": "شماره اقتصادی:",
+        "registrationNumber": "شماره ثبت:",
+        "nationalId": "شناسه ملی:",
+        "nationalCode": "کد ملی:",
+        "seller": "فروشنده:",
+        "date": "تاریخ:",
+        "postalCode": "کد پستی:",
+        "identifier": "نشانی:",
+        "buyer": "خریدار:",
+        "tracking": "پیگیری:",
+        "taxNumber": "شماره مالیاتی:",
+        "phoneNumber": "شماره تماس:",
+        "taxMemorySerial": "سریال حافظه مالیاتی:",
+        "posSerial": "سریال پایانه فروشگاهی:"
+      },
+      "values": {
+        "invoiceNumber": "188921",
+        "economicCode": "4241436528",
+        "registrationNumber": "43845",
+        "nationalId": "10320845876",
+        "phoneNumber": "09170586067",
+        "seller": "فروشگاه بنامی",
+        "date": "1404/11/07",
+        "postalCode": "7175433985",
+        "identifier": "شیراز، شرکت آرین، پارک علم و فناوری",
+        "buyer": "هدیه کرونی",
+        "nationalCode": "6579884562",
+        "tracking": "1233455689",
+        "taxNumber": "AH0UY5T037890",
+        "taxMemorySerial": "567999877643",
+        "posSerial": "5009841345"
+      }
+    },
+    "productColumns": [
+      { "key": "row", "label": "ردیف" },
+      { "key": "productId", "label": "شناسه کالا" },
+      { "key": "description", "label": "نام و شرح کالا" },
+      { "key": "seller", "label": "فروشنده" },
+      { "key": "quantity", "label": "تعداد" },
+      { "key": "amount", "label": "مبلغ" },
+      { "key": "discount", "label": "تخفیف" },
+      { "key": "total", "label": "مبلغ کل" }
+    ],
+    "items": [
+      {
+        "row": 1,
+        "productId": "4569873",
+        "description": "کت و شلوار زنانه",
+        "seller": "بنامی گالری",
+        "quantity": 1,
+        "unit": "عدد",
+        "amount": 2640000,
+        "discount": 2640000,
+        "total": 0
+      },
+      {
+        "row": 2,
+        "productId": "4569873",
+        "description": "کت و شلوار زنانه",
+        "seller": "بنامی گالری",
+        "quantity": 2,
+        "unit": "عدد",
+        "amount": 2640000,
+        "discount": 0,
+        "total": 5280000
+      }
+    ],
+    "summary": {
+      "total": 13900000,
+      "label": "جمع کل:"
+    },
+    "signatures": {
+      "buyerSignature": "مهر و امضای خریدار",
+      "deliveryDate": "تاریخ تحویل",
+      "sellerSignature": "مهر و امضای فروشنده"
+    },
+    "deliveryDate": "1404 بهمن 17",
+    "currency": "تومان",
+    "emptyValue": "---",
+    "trackingInfo": {
+      "trackingCode": "۴۵۶۷۹۸۲۳",
+      "orderDate": "۷ بهمن ۱۴۰۴",
+      "recipient": "هدیه کرونی",
+      "mobile": "۰۹۱۷۰۵۸۶۰۶۷",
+      "address": "شیراز, شهرک آرین, پارک علم و فناوری",
+      "amount": "۲,۸۹۰,۰۰۰",
+      "deliveryToCustomer": "چهارشنبه ۱۷ بهمن ۱۴۰۴",
+      "progressPercentage": "50%",
+      "packageInfo": "1 مرسوله  ",
+      "shippingMethod": "ارسال پست پیشتاز",
+      "productName": "کت چرم",
+      "quantity": "۱",
+      "purchasePrice": "۲,۸۹۰,۰۰۰",
+      "statusSectionTitle": "وضعیت سفارش",
+      "statusSectionDescription": "سفارش مشتری در مرحله تایید اولیه قرار دارد"
+    }
+  }
+}

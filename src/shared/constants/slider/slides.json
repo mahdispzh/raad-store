@@ -1,0 +1,31 @@
+{
+  "slides": [
+    {
+      "id": 1,
+      "title": "محصولات جدید",
+      "description": "بهترین کیفیت و قیمت‌های مناسب را از ما بخواهید",
+      "image": "/images/slide1.jpg",
+      "link": "/products"
+    },
+    {
+      "id": 2,
+      "title": "تخفیف ویژه",
+      "description": "تا ۵۰٪ تخفیف برای خرید اول",
+      "image": "/images/slide2.jpg",
+      "link": "/offers"
+    },
+    {
+      "id": 3,
+      "title": "ارسال رایگان",
+      "description": "برای خرید بالای یک میلیون تومان",
+      "image": "/images/slide3.jpg"
+    },
+    {
+      "id": 4,
+      "title": "پشتیبانی ۲۴ ساعته",
+      "description": "تیم ما همیشه آماده خدمت‌رسانی به شماست",
+      "image": "/images/slide4.jpg",
+      "link": "/support"
+    }
+  ]
+}

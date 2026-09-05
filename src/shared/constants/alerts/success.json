@@ -1,0 +1,12 @@
+{
+  "profile": {
+    "addToCartSuccess": "با موفقیت به سبد خرید اضافه شد",
+    "ratingSubmitted": "امتیاز شما ثبت شد",
+    "commentSubmitted": "نظر شما با موفقیت ثبت شد",
+    "removedFromWishlist": "از علاقه‌مندی‌ها حذف شد",
+    "profileSaved": "اطلاعات با موفقیت ثبت شد",
+    "profileUpdated": "اطلاعات جدید با موفقیت ثبت شد",
+    "verificationCodeSent": "کد تایید برای شما ارسال شد",
+    "logoutSuccess": "خروج موفق"
+  }
+}

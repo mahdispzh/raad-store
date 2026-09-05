@@ -1,0 +1,24 @@
+import { useForm } from "react-hook-form";
+import { SelectRHF } from "@/src/shared/ui/select";
+
+const options = [
+  { value: 1, label: "موبایل" },
+  { value: 2, label: "لپ تاپ" },
+  { value: 3, label: "هدفون" },
+];
+
+const form = useForm({
+  defaultValues: { categoryId: undefined },
+});
+
+<SelectRHF
+  control={form.control}
+  name="categoryId"
+  label="دسته بندی"
+  placeholder="انتخاب کنید"
+  options={options}
+  size="md"
+  itemSize="sm"
+  searchable={true}
+  required
+/>

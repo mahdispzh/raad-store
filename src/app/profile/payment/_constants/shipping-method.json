@@ -1,0 +1,74 @@
+
+{
+  "shippingMethods": {
+    "regular": {
+      "id": "regular",
+      "title": "ارسال پست پیشتاز",
+      "description": "هزینه به‌صرفه‌تر",
+      "deliveryTime": "۵ تا ۱۰ روز کاری",
+      "cost": 60000,
+      "icon": "TruckIcon"
+    },
+    "express": {
+      "id": "express",
+      "title": "ارسال تیپاکس",
+      "description": "ارسال سریع‌تر",
+      "deliveryTime": "۳ تا ۶ روز کاری",
+      "cost": 180000,
+      "icon": "OfficerIcon"
+    }
+  },
+  "paymentGateways": {
+    "pasargad": {
+      "id": "pasargad",
+      "title": "پرداخت با پاسارگاد",
+      "description": "پرداخت امن و سریع",
+      "icon": "PasargadIcon",
+      "bankName": "بانک پاسارگاد"
+    },
+    "saman": {
+      "id": "saman",
+      "title": "پرداخت با سامان",
+      "description": "پرداخت امن و سریع",
+      "icon": "SamanIcon",
+      "bankName": "بانک سامان"
+    }
+  },
+  "labels": {
+    "orderSummary": {
+      "title": "خلاصه سفارش",
+      "productPrice": "قیمت کالاها",
+      "shippingCost": "هزینه ارسال",
+      "total": "مجموع",
+      "submitButton": "تایید و ادامه"
+    },
+    "shippingMethod": {
+      "title": "روش ارسال",
+      "subtitle": "انتخاب روش ارسال"
+    },
+    "paymentMethod": {
+      "title": "روش پرداخت",
+      "subtitle": "انتخاب روش پرداخت",
+      "discountCode": "کد تخفیف",
+      "discountPlaceholder": "کد تخفیف را وارد کنید",
+      "applyButton": "اعمال",
+      "payButton": "پرداخت"
+    },
+    "success": {
+      "title": "پرداخت موفق",
+      "trackingCode": "کد پیگیری",
+      "dateTime": "تاریخ و زمان",
+      "paymentStatus": "وضعیت پرداخت",
+      "receiverName": "نام گیرنده",
+      "phone": "شماره تماس",
+      "address": "آدرس",
+      "shippingMethod": "روش ارسال",
+      "postalCode": "کد پستی"
+    },
+    "address": {
+      "title": "آدرس تحویل",
+      "selectAddress": "انتخاب آدرس",
+      "changeAddress": "تغییر آدرس"
+    }
+  }
+}

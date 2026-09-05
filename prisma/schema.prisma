@@ -1,0 +1,385 @@
+generator client {
+  provider = "prisma-client"
+  output   = "./generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model auth_sessions {
+  id                 Int       @id(map: "auth_session_id") @unique(map: "auth_session_id_unique") @default(autoincrement())
+  refresh_token_hash String
+  expires_at         DateTime  @db.Timestamptz(6)
+  created_at         DateTime  @default(now()) @db.Timestamptz(6)
+  user_id            Int
+  device_id          String?
+  ip                 String?
+  user_agent         String?
+  revoked_at         DateTime? @db.Timestamptz(6)
+  users              users     @relation(fields: [user_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "user_id_fkey")
+}
+
+model banners {
+  id         Int      @id @default(autoincrement())
+  image      String
+  sort_order Int?     @unique(map: "sort_order_unique")
+  alt        String?
+  is_active  Boolean?
+  created_at DateTime @default(now()) @db.Timestamptz(6)
+}
+
+model blogs {
+  id          Int           @id @unique(map: "blogs_id_unique") @default(autoincrement())
+  title       String        @db.VarChar(255)
+  slug        String        @unique(map: "blogs_slug_unique") @db.VarChar(255)
+  content     String
+  status      Int
+  user_id     Int
+  created_at  DateTime      @default(now()) @db.Timestamptz(6)
+  updated_at  DateTime?     @db.Timestamptz(6)
+  comments    Int?
+  summary     String?
+  image       String?
+  publish_at  DateTime?     @db.Timestamptz(6)
+  likes       Int?
+  view        Int?
+  rading_time String?
+  author      String?
+  keywords    String[]
+  tags        String[]
+  users       users         @relation(fields: [user_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "user_id_fkey")
+  liked_blogs liked_blogs[]
+  saved_blogs saved_blogs[]
+}
+
+model brands {
+  id         Int        @id @unique(map: "brand_id_unique") @default(autoincrement())
+  name       String     @db.VarChar(255)
+  slug       String     @unique(map: "brand_slug_unique") @db.VarChar(255)
+  image      String
+  created_at DateTime   @default(now()) @db.Timestamptz(6)
+  products   products[]
+}
+
+model cart_items {
+  id               Int              @id @default(autoincrement())
+  cart_id          Int
+  variant_id       Int
+  quantity         Int
+  created_at       DateTime         @default(now()) @db.Timestamptz(6)
+  carts            carts            @relation(fields: [cart_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "cart_fkey")
+  product_variants product_variants @relation(fields: [variant_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "variant_fkey")
+}
+
+model carts {
+  id         Int          @id(map: "cards_pkey") @unique(map: "card_id_unique") @default(autoincrement())
+  user_id    Int
+  created_at DateTime?    @default(now()) @db.Timestamptz(6)
+  cart_items cart_items[]
+  users      users        @relation(fields: [user_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "user_id_fkey")
+  orders     orders[]
+}
+
+model categories {
+  id          Int        @id @unique(map: "category_id_unique") @default(autoincrement())
+  name        String     @db.VarChar(255)
+  slug        String     @unique(map: "category_slug_unique") @db.VarChar(255)
+  image       String
+  parent_id   Int?
+  description String?
+  created_at  DateTime   @default(now()) @db.Timestamptz(6)
+  products    products[]
+}
+
+model colors {
+  id               Int                @id @unique(map: "color_id_unique") @default(autoincrement())
+  name             String             @db.VarChar(50)
+  hex_code         String             @db.VarChar(7)
+  created_at       DateTime           @default(now()) @db.Timestamptz(6)
+  product_variants product_variants[]
+}
+
+model comments {
+  id         Int      @id @default(autoincrement())
+  product_id Int
+  parent_id  Int?
+  text       String
+  created_at DateTime @default(now()) @db.Timestamptz(6)
+  user_id    Int
+  isUnknown  Boolean?
+  status     Int?
+  products   products @relation(fields: [product_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "product_id_fkey")
+  users      users    @relation(fields: [user_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "user_id_fkey")
+}
+
+model discounts {
+  id         Int      @id(map: "discount_codes_pkey") @unique(map: "discound_code_id_unique") @default(autoincrement())
+  code       String   @unique(map: "discound_code_code_unique") @db.VarChar(50)
+  type       Int
+  value      Int
+  created_at DateTime @default(now()) @db.Timestamptz(6)
+}
+
+model features {
+  id         Int      @id @default(autoincrement())
+  name       String?
+  value      String?
+  product_id Int
+  created_at DateTime @default(now()) @db.Timestamptz(6)
+  products   products @relation(fields: [product_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "product_id_fkey")
+}
+
+model liked_blogs {
+  id         Int      @id @default(autoincrement())
+  blog_id    Int
+  user_id    Int
+  created_at DateTime @default(now()) @db.Timestamptz(6)
+  blogs      blogs    @relation(fields: [blog_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "blog_id_fkey")
+  users      users    @relation(fields: [user_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "user_id_fkey")
+
+  @@unique([blog_id, user_id], map: "user_id_blog_id_unique")
+}
+
+model likes {
+  id         Int      @id @default(autoincrement())
+  product_id Int
+  user_id    Int
+  created_at DateTime @default(now()) @db.Timestamptz(6)
+  products   products @relation(fields: [product_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "product_id_fkey")
+  users      users    @relation(fields: [user_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "user_id_fkey")
+
+  @@unique([product_id, user_id], map: "user_product_unique")
+}
+
+model order_items {
+  id               Int              @id @default(autoincrement())
+  order_id         Int
+  product_id       Int
+  variant_id       Int
+  quantity         Int
+  unit_price       Int
+  created_at       DateTime         @default(now()) @db.Timestamptz(6)
+  orders           orders           @relation(fields: [order_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "order_id")
+  products         products         @relation(fields: [product_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "product_id")
+  product_variants product_variants @relation(fields: [variant_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "variant_id_fkey")
+}
+
+model orders {
+  id             Int            @id @unique(map: "order_id_unique") @default(autoincrement())
+  user_id        Int
+  address_id     Int
+  total_price    Int
+  status         Int
+  payment_status Int
+  created_at     DateTime?      @default(now()) @db.Timestamptz(6)
+  cart_id        Int
+  order_items    order_items[]
+  user_addresses user_addresses @relation(fields: [address_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "address_id_fkey")
+  carts          carts          @relation(fields: [cart_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "card_id_fkey")
+  users          users          @relation(fields: [user_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "user_id_fkey")
+  payments       payments[]
+}
+
+model otp_codes {
+  id         Int       @id @default(autoincrement())
+  phone      String    @db.VarChar(20)
+  expires_at DateTime  @db.Timestamptz(6)
+  created_at DateTime  @default(now()) @db.Timestamptz(6)
+  attempts   Int       @default(0)
+  used_at    DateTime? @db.Timestamptz(6)
+  otp_hash   String
+}
+
+model payments {
+  id               Int       @id @unique(map: "payment_id_unique") @default(autoincrement())
+  order_id         Int
+  amount           Int
+  payment_method   String    @db.VarChar(50)
+  status           Int
+  transaction_code String    @db.VarChar(255)
+  paid_at          DateTime? @db.Timestamptz(6)
+  created_at       DateTime  @default(now()) @db.Timestamptz(6)
+  sending_method   String?
+  ref_id           String?
+  card_pan         String?
+  card_hash        String?
+  authority        String?
+  orders           orders    @relation(fields: [order_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "order_id_fkey")
+}
+
+model product_variants {
+  id          Int           @id @unique(map: "id_unique") @default(autoincrement())
+  product_id  Int
+  color_id    Int
+  size_id     Int
+  sku         String        @unique(map: "sku_unique") @db.VarChar(100)
+  price       Int?
+  stock       Int
+  created_at  DateTime      @default(now()) @db.Timestamptz(6)
+  is_active   Boolean?      @default(true)
+  cart_items  cart_items[]
+  order_items order_items[]
+  colors      colors        @relation(fields: [color_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "color_id_fkey")
+  products    products      @relation(fields: [product_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "product_id_fkey")
+  sizes       sizes         @relation(fields: [size_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "size_id_fkey")
+
+  @@unique([product_id, size_id, color_id], map: "product_variant_unique")
+}
+
+model products {
+  id               Int                @id @unique(map: "product_id_unique") @default(autoincrement())
+  name             String             @db.VarChar(255)
+  description      String
+  status           Int
+  created_at       DateTime?          @default(now()) @db.Timestamptz(6)
+  updated_at       DateTime?          @db.Timestamptz(6)
+  images           String[]
+  slug             String             @unique(map: "product_slug_unique")
+  discount         Int?
+  sold_count       Int?
+  views            Int?
+  category_id      Int?
+  brand_id         Int?
+  guide_image      String?
+  comments         comments[]
+  features         features[]
+  likes            likes[]
+  order_items      order_items[]
+  product_variants product_variants[]
+  brands           brands?            @relation(fields: [brand_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "brand_id_fkey")
+  categories       categories?        @relation(fields: [category_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "category_id_fkey")
+  ratings          ratings[]
+}
+
+model ratings {
+  id         Int      @id @default(autoincrement())
+  product_id Int
+  user_id    Int
+  rating     Int
+  created_at DateTime @default(now()) @db.Timestamptz(6)
+  products   products @relation(fields: [product_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "product_id_fkey")
+  users      users    @relation(fields: [user_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "user_id_fkey")
+
+  @@unique([product_id, user_id], map: "product_user_id_unique")
+}
+
+model saved_blogs {
+  user_id    Int
+  blog_id    Int
+  id         Int      @id(map: "uniuqe_saved_blog_id") @default(autoincrement())
+  created_at DateTime @default(now()) @db.Timetz(6)
+  blogs      blogs    @relation(fields: [blog_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "blog_id_fkey")
+  users      users    @relation(fields: [user_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "user_id_fkey")
+}
+
+model settings {
+  id                Int      @id @default(autoincrement())
+  popular_search    String[]
+  delivery_duration String?
+}
+
+model sizes {
+  id               Int                @id @unique(map: "size_id_unique") @default(autoincrement())
+  name             String             @db.VarChar(50)
+  sort_order       Int
+  created_at       DateTime           @default(now()) @db.Timestamptz(6)
+  product_variants product_variants[]
+}
+
+model store_information {
+  id              Int     @id @default(autoincrement())
+  phone_primary   String?
+  phone_secondary String?
+  office_phone    String?
+  address         String?
+  map             String?
+  mail            String?
+  telegram        String?
+  whatsapp        String?
+  instagram       String?
+  bale            String?
+  eita            String?
+  rubika          String?
+  owner_name      String? @map("owner-name")
+  owner_phone     String? @map("owner-phone")
+  owner_mail      String? @map("owner-mail")
+  account_sheba   String? @map("account-sheba")
+  account_number  String? @map("account-number")
+  account_name    String? @map("account-name")
+  account_owner   String? @map("account-owner")
+  logo_main       String?
+  logo_sub        String?
+  logo_fav        String?
+  title           String?
+  description     String?
+}
+
+model user_addresses {
+  id             Int      @id @unique(map: "unique_address_id") @default(autoincrement())
+  user_id        Int
+  province       String   @db.VarChar(100)
+  city           String   @db.VarChar(100)
+  address        String
+  postal_code    String   @db.VarChar(20)
+  receiver_name  String   @db.VarChar(255)
+  receiver_phone String   @db.VarChar(20)
+  title          String?
+  default        Boolean?
+  created_at     DateTime @default(now()) @db.Timestamptz(6)
+  orders         orders[]
+  users          users    @relation(fields: [user_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "user_id_fkey")
+}
+
+model users {
+  name            String?          @db.VarChar(255)
+  mail            String?          @db.VarChar(255)
+  phone           String?          @unique(map: "unique_phone") @db.VarChar(20)
+  created_at      DateTime?        @default(now()) @db.Timestamptz(6)
+  updated_at      DateTime?        @db.Timestamptz(6)
+  id              Int              @id @unique(map: "unique_user_id") @default(autoincrement())
+  role            Int
+  recently_search String[]
+  recently_viewed Int[]
+  recently_blogs  Int[]
+  image_id        Int              @default(0)
+  bank_id         Int?
+  card_number     String?
+  account_number  String?
+  sheba_number    String?
+  auth_sessions   auth_sessions[]
+  blogs           blogs[]
+  carts           carts[]
+  comments        comments[]
+  liked_blogs     liked_blogs[]
+  likes           likes[]
+  notifications   notifications[]
+  orders          orders[]
+  ratings         ratings[]
+  saved_blogs     saved_blogs[]
+  user_addresses  user_addresses[]
+}
+
+model notifications {
+  id         Int       @id @default(autoincrement())
+  user_id    Int
+  type       String
+  data       Json?     @db.Json
+  is_read    Boolean   @default(false)
+  created_at DateTime  @default(now()) @db.Timestamptz(6)
+  dedupe_key String?   @unique
+  read_at    DateTime? @db.Timestamptz(6)
+  users      users     @relation(fields: [user_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "users_fkey")
+
+  @@index([user_id, is_read, created_at])
+}
+
+model restaurants {
+  title         String?
+  id            Int      @id
+  working_hours String?  @map("working-hours")
+  address       String?
+  phone         String?
+  gallery       String[]
+  map_location  String?
+}

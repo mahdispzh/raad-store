@@ -1,0 +1,1434 @@
+{
+  "landing": {
+    "home": {
+      "shopByCategory": "خرید بر اساس دسته‌بندی",
+      "latest": "تازه ترین ها",
+      "outOfStock": "ناموجود",
+      "mostPopular": "محبوب ترین ها",
+      "bestSelling": "پرفروش ترین ها",
+      "specialSale": "فروش ویژه"
+    },
+
+    "product": {
+      "color": "رنگ",
+      "size": "سایز",
+      "features": "ویژگی ها",
+      "bonamiStore": "فروشگاه بونامی",
+      "guarantee": "گارانتی اصالت و سلامت فیزیکی کالا",
+      "shippingMethods": "روش ها و هزینه‌های ارسال",
+      "expressPost": "پست پیشتاز",
+      "tipax": "تیپاکس",
+      "addToCart": "افزودن به سبد خرید",
+      "suggestedProducts": "کالاهای پیشنهادی",
+      "productIntroduction": "معرفی کالا",
+      "userReviews": "امتیاز و دیدگاه کاربران",
+      "submitReview": "ثبت دیدگاه",
+      "similarProducts": "کالاهای مشابه"
+    },
+    "profile": {
+      "orders": "سفارش ها",
+      "addresses": "آدرس ها",
+      "lists": "لیست ها",
+      "reviews": "دیدگاه ها",
+      "logout": "خروج از حساب کاربری"
+    },
+    "faq": {
+      "questionSubject": "موضوع پرسش شما چیست؟",
+      "searchGuide": "موضوع موردنظرتان را جستجو کرده یا از دسته بندی زیر انتخاب کنید.",
+      "search": "جستجو",
+      "questionCategories": "دسته‌بندی پرسش ها",
+      "loginAndRegister": "ورود و ثبت نام",
+      "support": "پشتیبانی",
+      "orderRegistration": "ثبت سفارش",
+      "orderShipping": "ارسال سفارش",
+      "sellerShipping": "ارسال توسط فروشنده",
+      "returnProduct": "بازگرداندن کالا",
+      "discountCode": "کد تخفیف",
+      "otherCases": "سایر موارد",
+      "frequentlyAskedQuestions": "پرسش های متداول",
+      "guaranteeQuestion": "چگونه از گارانتی فروشگاه استفاده کنم؟",
+      "trackOrderQuestion": "چطور سفارشم را پیگیری کنم؟",
+      "shippingCostQuestion": "هزینه روش های متفاوت ارسال چقدر است؟",
+      "cancelOrderQuestion": "چطور می‌توانم سفارشم را لغو کنم؟",
+      "returnOrderQuestion": "چگونه میتوانم کالایی را مرجوع کنم؟",
+      "wrongSizeQuestion": "اگر سایز کالای خریداری شده مناسب نبود آیا امکان بازگشت کالا وجود دارد؟"
+    },
+    "blog": {
+      "allBlogs": "همه بلاگ ها",
+      "bookmarked": "نشان شده",
+      "latestReads": "آخرین مطالعه ها",
+      "readMore": "مطالعه بیشتر"
+    },
+    "cart": {
+      "cart": "سبد خرید",
+      "address": "آدرس",
+      "payment": "پرداخت",
+      "nextPurchase": "خرید بعدی",
+      "yourCart": "سبد خرید شما",
+      "delete": "حذف",
+      "moveToNextPurchase": "انتقال به خرید بعدی",
+      "bonamiStore": "فروشگاه بونامی",
+      "guarantee": "گارانتی اصالت و سلامت فیزیکی کالا",
+      "tipaxShipping": "ارسال تیپاکس",
+      "productsPrice": "قیمت کالاها",
+      "productsCount": "تعداد کالاها",
+      "totalCartPrice": "جمع کل سبد خرید",
+      "yourProfit": "سود شما از این خرید",
+      "confirmAndCompleteOrder": "تایید و تکمیل سفارش",
+      "suggestedProducts": "کالاهای پیشنهادی",
+      "addToCart": "افزودن به سبد خرید",
+      "sendToSelectedAddress": "ارسال به آدرس منتخب",
+      "selectAddress": "انتخاب آدرس",
+      "newAddress": "آدرس جدید",
+      "confirmAddressAndContinue": "تایید آدرس و ادامه",
+      "postalShipping": "ارسال پستی",
+      "payableAmount": "مبلغ قابل پرداخت",
+      "addNewAddress": "افزودن آدرس جدید",
+      "addresses": "آدرس ها",
+      "addAddress": "افزودن آدرس",
+      "myAddresses": "آدرس های من",
+      "province": "استان",
+      "city": "شهر",
+      "streetAddress": "آدرس",
+      "addressExample": "مثال: خیابان, کوچه و جزئیات آدرس",
+      "plaque": "پلاک",
+      "unit": "واحد",
+      "postalCode": "کد پستی",
+      "postalCodeValidation": "کد پستی باید ۱۰ رقمی باشد",
+      "selectPaymentMethod": "انتخاب روش پرداخت",
+      "onlinePayment": "پرداخت اینترنتی",
+      "onlinePaymentDescription": "پرداخت آنلاین با تمامی کارت های بانکی",
+      "close": "بستن",
+      "discountCode": "کد تخفیف",
+      "enterDiscountCode": "کد تخفیف خود را وارد کنید.",
+      "writeHere": "اینجا بنویسید.",
+      "submit": "ثبت",
+      "registerOrder": "ثبت سفارش"
+    },
+    "application": {
+      "application": "اپلیکیشن",
+      "downloadDescription": "شما می‌توانید از طریق تمامی لینک‌های زیر اپلیکیشن را دانلود کنید.",
+      "iosTitle": "برای سیستم عامل ios",
+      "directWebApp": "دریافت مستقیم وب‌اپ",
+      "appStore": "دریافت از اپ استور",
+      "sibApp": "دریافت از سیب‌اپ",
+      "androidTitle": "برای سیستم عامل اندروید",
+      "directAndroid": "دریافت مستقیم اندروید",
+      "bazaar": "دریافت از بازار",
+      "googlePlay": "دریافت از گوگل استور"
+    },
+    "aboutUs": {
+      "aboutUs": "درباره ما"
+    },
+    "tutorial": {
+      "tutorial": "آموزش",
+      "learningDescription": "در این آموزش چه می‌آموزید؟"
+    }
+  },
+  "profile": {
+    "home": {
+      "myOrders": "سفارش های من",
+      "viewAll": "مشاهده همه",
+      "order": "سفارش",
+      "current": "جاری",
+      "delivered": "تحویل شده",
+      "returned": "مرجوع شده",
+      "frequentPurchases": "خریدهای پر تکرار شما",
+      "addToCart": "افزودن به سبد خرید"
+    },
+    "orders": {
+      "current": "جاری",
+      "delivered": "تحویل شده",
+      "returned": "مرجوع شده",
+      "amount": "مبلغ",
+      "discount": "تخفیف",
+      "shipment": "مرسوله",
+      "expressPost": "ارسال پست پیشتاز",
+      "payment": "پرداخت",
+      "preparation": "آماده سازی",
+      "shipping": "ارسال",
+      "delivery": "تحویل",
+      "viewInvoice": "مشاهده فاکتور",
+      "orderDetails": "جزئیات سفارش",
+      "trackingCode": "کد پیگیری سفارش",
+      "orderDate": "تاریخ ثبت سفارش",
+      "receiver": "تحویل گیرنده",
+      "mobileNumber": "شماره موبایل",
+      "address": "آدرس",
+      "deliveredToCustomer": "تحویل به مشتری",
+      "submitReview": "ثبت دیدگاه",
+      "orderCode": "کد سفارش",
+      "print": "پرینت",
+      "download": "دانلود",
+      "electronicInvoice": "صورت حساب الکترونیکی فروش",
+      "seller": "فروشنده",
+      "nationalId": "شناسه ملی",
+      "registrationNumber": "شماره ثبت",
+      "economicCode": "شماره اقتصادی",
+      "location": "نشانی",
+      "postalCode": "کد پستی",
+      "buyer": "خریدار",
+      "phoneNumber": "شماره تماس",
+      "invoiceNumber": "شماره فاکتور",
+      "date": "تاریخ",
+      "tracking": "پیگیری",
+      "taxNumber": "شماره مالیاتی",
+      "taxMemorySerial": "سریال حافظه مالیاتی",
+      "posSerial": "سریال پایانه فروشگاهی",
+      "row": "ردیف",
+      "productId": "شناسه کالا",
+      "productDescription": "نام و شرح کالا",
+      "count": "تعداد",
+      "totalAmount": "مبلغ کل",
+      "grandTotal": "جمع کل",
+      "sellerSignature": "مهر و امضای فروشنده",
+      "deliveryDate": "تاریخ تحویل",
+      "buyerSignature": "مهر و امضای خریدار"
+    },
+    "wishlist": {
+      "wishlist": "لیست علاقه مندی ها",
+      "addToCart": "افزودن به سبد خرید",
+      "removeFromWishlist": "حذف از علاقه مندی ها"
+    },
+    "reviews": {
+      "myReviews": "دیدگاه های من",
+      "approved": "تایید شده",
+      "bonamiStore": "فروشگاه بونامی",
+      "pendingApproval": "در انتظار تایید",
+      "rejected": "تایید نشده"
+    },
+    "addresses": {
+      "addresses": "آدرس ها",
+      "addAddress": "افزودن آدرس",
+      "myAddresses": "آدرس های من",
+      "receiver": "گیرنده",
+      "postalCode": "کد پستی",
+      "addNewAddress": "افزودن آدرس جدید",
+      "province": "استان",
+      "city": "شهر",
+      "address": "آدرس",
+      "plaque": "پلاک",
+      "unit": "واحد",
+      "addressExample": "مثال: خیابان, کوچه و جزئیات آدرس",
+      "postalCodeValidation": "کد پستی باید ۱۰ رقمی باشد",
+      "confirmAddressAndContinue": "تایید آدرس و ادامه"
+    },
+    "notifications": {
+      "messages": "پیام ها",
+      "orderRegistered": "سفارش شما ثبت شد و به‌زودی آماده می‌شود.",
+      "viewDetails": "مشاهده جزئیات"
+    },
+    "recentVisits": {
+      "recentVisits": "بازدید‌های اخیر",
+      "specialSale": "فروش ویژه",
+      "addToCart": "افزودن به سبد خرید"
+    },
+    "account": {
+      "fullName": "نام و نام خانوادگی",
+      "birthDate": "تاریخ تولد",
+      "mobileNumber": "شماره موبایل",
+      "nationalCode": "کد ملی",
+      "email": "ایمیل",
+      "refundMethod": "روش بازگرداندن پول",
+      "approved": "تایید شده",
+      "rejected": "تایید نشده",
+      "pendingApproval": "در انتظار تایید",
+      "submitIdentityInfo": "ثبت اطلاعات شناسایی",
+      "identityInfoDescription": "لطفا اطلاعات شناسایی خود را با دقت وارد کنید.",
+      "firstName": "نام",
+      "lastName": "نام خانوادگی",
+      "foreignCitizen": "اتباع خارجی هستم و کد ملی ندارم.",
+      "enterNationalCode": "کد ملی خود را وارد کنید",
+      "month": "ماه",
+      "day": "روز",
+      "year": "سال",
+      "reviewInformation": "بررسی اطلاعات",
+      "editMobileNumber": "ویرایش شماره موبایل",
+      "enterMobileNumber": "شماره موبایل خود را وارد کنید",
+      "mobileVerificationDescription": "برای ثبت این شماره باید آن را تایید کنید.",
+      "receiveVerificationCode": "دریافت کد تایید و تایید شماره",
+      "refundMoneyMethod": "روش بازگرداندن وجه مرجوعی",
+      "refundDescription": "لطفا برای برگشتن پول خود شماره شبا خود را وارد کنید.",
+      "ibanNumber": "شماره شبا",
+      "enterIbanNumber": "لطفا شماره شبا خود را وارد کنید",
+      "confirm": "تایید"
+    },
+    "logout": {
+      "logoutQuestion": "از حساب کاربری خارج می‌شوید؟",
+      "logoutDescription": "با خروج از حساب کاربری به سبد خرید فعلی‌تان دسترسی نخواهید داشت.",
+      "cancel": "انصراف",
+      "logout": "خروج از حساب"
+    }
+  },
+  "dashboard": {
+    "login": {
+      "title": "سلام!",
+      "description": "لطفا شماره موبایل خود را وارد کنید.",
+      "submit": "ورود",
+      "terms": "ورود شما به معنای پذیرش شرایط این سایت و قوانین حریم خصوصی است.",
+      "verifyCode": "کد تایید را وارد کنید",
+      "codeSent": "کد تایید برای شماره",
+      "sent": "پیامک شد",
+      "remainingTime": "مانده تا دریافت مجدد",
+      "login": "ورود",
+      "resendCode": "ارسال مجدد کد"
+    },
+    "logout": {
+      "title": "خروج از حساب کاربری",
+      "description": "آیا میخواهید از حساب کاربری خارج شوید؟",
+      "submit": "خروج از حساب",
+      "cancel": "انصراف"
+    },
+    "header": {
+      "status": "وضعیت پرداخت",
+      "todayOrders": "سفارشات امروز شما",
+      "addProduct": "اضافه کردن محصول"
+    },
+    "quickItems": [
+      {
+        "id": 1,
+        "label": "اضافه کردن محصول",
+        "buttonIcon": "DashboardPlusIcon",
+        "buttonIconColor": "primary"
+      },
+      {
+        "id": 2,
+        "label": "اضافه کردن بلاگ",
+        "buttonIcon": "DashboardPlusIcon",
+        "buttonIconColor": "primary"
+      },
+      {
+        "id": 3,
+        "label": "اضافه کردن دسته بندی",
+        "buttonIcon": "DashboardPlusIcon",
+        "buttonIconColor": "primary"
+      },
+
+      {
+        "id": 4,
+        "label": "سفارشات امروز ",
+        "value": 0,
+        "valueUnit": "سفارش",
+        "buttonIcon": "DropleftArrowIcon"
+      },
+      {
+        "id": 5,
+        "label": "وضعیت پرداخت",
+        "value": "فعال",
+        "icon": "DashboardSuccessIcon",
+        "iconColor": "success"
+      }
+    ],
+    "shopInfo": {
+      "name": "فروشگاه لباس بنامی",
+      "logout": "خروج",
+      "profile": "پروفایل",
+      "messages": "پیام‌ها"
+    },
+
+    "inventory": {
+      "title": "موجودی انبار",
+      "items": [
+        {
+          "value": "۸۳",
+          "label": "محصولات ناموجود",
+          "description": "(که در 30 روز گذشته فروش داشته اند)"
+        },
+        {
+          "value": "۷۶",
+          "label": "محصولات در حال اتمام",
+          "description": ""
+        },
+        {
+          "value": "۴۲",
+          "label": "محصولات موجود",
+          "description": ""
+        }
+      ]
+    },
+    "orders": {
+      "title": "سفارش‌ها",
+      "items": [
+        {
+          "value": "۲۴",
+          "label": "ارسال نشده امروز",
+          "description": ""
+        },
+        {
+          "value": "۱۲۴",
+          "label": "کل ارسال شده‌ها",
+          "description": ""
+        },
+        {
+          "value": "۵۱",
+          "label": "تعداد اقلام مرجوع شده",
+          "description": "(در 30 روز گذشته)"
+        }
+      ]
+    },
+    "shipments": {
+      "title": "مرسوله ها",
+      "items": [
+        {
+          "value": "۷۵",
+          "label": "مرسوله در حال راه",
+          "description": ""
+        },
+        {
+          "value": "۱۰۵",
+          "label": "مرسوله های در حال برداشت",
+          "description": ""
+        },
+        {
+          "value": "۴",
+          "label": "مرسوله های ناقص",
+          "description": "(در 30 روز گذشته)"
+        }
+      ]
+    },
+
+    "shipmentStatus": {
+      "title": "وضعیت محصولات",
+      "items": [
+        {
+          "value": "۱",
+          "label": "در انتظار تایید",
+          "icon": "DashboardMinusIcon"
+        },
+        {
+          "value": "۵",
+          "label": "تنوع غیرفعال",
+          "icon": "ErrorIcon"
+        },
+        {
+          "value": "۴۰",
+          "label": "بررسی مجدد",
+          "icon": "DashboardRefreshIcon"
+        },
+        {
+          "value": "۷۵",
+          "label": "فعال",
+          "icon": "SuccessOutlineIcon"
+        }
+      ]
+    },
+    "customerSatisfaction": {
+      "title": "میزان رضایت مشتریان",
+      "fromVotes": "از",
+      "votes": "رای",
+      "satisfactionRate": "درصد رضایت کلی",
+      "levels": {
+        "verySatisfied": {
+          "name": "کاملا راضی",
+          "count": 8
+        },
+        "satisfied": {
+          "name": "راضی",
+          "count": 53
+        },
+        "noOpinion": {
+          "name": "نظر ندارم",
+          "count": 2
+        },
+        "dissatisfied": {
+          "name": "ناراضی",
+          "count": 3
+        },
+        "veryDissatisfied": {
+          "name": "کاملا ناراضی",
+          "count": 10
+        }
+      }
+    }
+  },
+
+  "categories": {
+    "shirt": {
+      "title": "شومیز",
+      "link": "/images/c1.png"
+    },
+    "pants": {
+      "title": "شلوار",
+      "link": "/images/c2.png"
+    },
+    "tshirt": {
+      "title": "تیشرت و بافت",
+      "link": "/images/c3.png"
+    },
+    "coat": {
+      "title": "پالتو",
+      "link": "/images/c4.png"
+    },
+    "overallVest": {
+      "title": "اورال و وست",
+      "link": "/images/c5.png"
+    },
+    "bag": {
+      "title": "کیف",
+      "link": "/images/c6.png"
+    },
+    "shoes": {
+      "title": "کفش",
+      "link": "/images/c7.png"
+    }
+  },
+
+  "products": {
+    "latest": [
+      {
+        "id": 1,
+        "title": "شومیز لینن سفید",
+        "image": "/images/p1.png",
+        "price": 1290000,
+        "discount": 10,
+        "stock": 12,
+        "rating": 4.8
+      },
+      {
+        "id": 2,
+        "title": "کت کوتاه مشکی",
+        "image": "/images/p2.png",
+        "price": 2490000,
+        "stock": 0,
+        "rating": 4.2
+      },
+      {
+        "id": 3,
+        "title": "بافت پاییزه کرم",
+        "image": "/images/p3.png",
+        "price": 1590000,
+        "discount": 15,
+        "stock": 8,
+        "rating": 4.5
+      },
+      {
+        "id": 4,
+        "title": "شلوار پارچه‌ای طوسی",
+        "image": "/images/p4.png",
+        "price": 1890000,
+        "stock": 4,
+        "rating": 3.9
+      },
+      {
+        "id": 5,
+        "title": "پالتو بلند زنانه",
+        "image": "/images/p5.png",
+        "price": 3290000,
+        "discount": 20,
+        "stock": 0,
+        "rating": 4.7
+      },
+      {
+        "id": 6,
+        "title": "کیف دوشی مینیمال",
+        "image": "/images/p6.png",
+        "price": 990000,
+        "stock": 15,
+        "rating": 4.3
+      },
+      {
+        "id": 7,
+        "title": "مانتو نخی سبز",
+        "image": "/images/p7.png",
+        "price": 2390000,
+        "discount": 12,
+        "stock": 5,
+        "rating": 4.6
+      },
+      {
+        "id": 8,
+        "title": "کت جین کوتاه",
+        "image": "/images/p8.png",
+        "price": 2690000,
+        "stock": 7,
+        "rating": 4.1
+      },
+      {
+        "id": 9,
+        "title": "تیشرت چاپ‌دار سفید",
+        "image": "/images/p9.png",
+        "price": 790000,
+        "stock": 18,
+        "rating": 4.0
+      },
+      {
+        "id": 10,
+        "title": "شلوار مام استایل",
+        "image": "/images/p10.png",
+        "price": 2190000,
+        "discount": 5,
+        "stock": 3,
+        "rating": 3.8
+      }
+    ],
+
+    "popular": [
+      {
+        "id": 11,
+        "title": "مانتو کژوال کرم",
+        "image": "/images/p1.png",
+        "price": 2190000,
+        "stock": 7,
+        "rating": 4.4
+      },
+      {
+        "id": 12,
+        "title": "کت اورسایز قهوه‌ای",
+        "image": "/images/p2.png",
+        "price": 2790000,
+        "discount": 12,
+        "stock": 2,
+        "rating": 4.5
+      },
+      {
+        "id": 13,
+        "title": "شومیز گلدار",
+        "image": "/images/p3.png",
+        "price": 1490000,
+        "stock": 0,
+        "rating": 4.1
+      },
+      {
+        "id": 14,
+        "title": "تیشرت لانگ سفید",
+        "image": "/images/p4.png",
+        "price": 890000,
+        "stock": 11,
+        "rating": 3.9
+      },
+      {
+        "id": 15,
+        "title": "کیف دستی مشکی",
+        "image": "/images/p5.png",
+        "price": 1190000,
+        "discount": 5,
+        "stock": 6,
+        "rating": 4.3
+      },
+      {
+        "id": 16,
+        "title": "کفش اسپرت زنانه",
+        "image": "/images/p6.png",
+        "price": 2590000,
+        "stock": 0,
+        "rating": 4.6
+      },
+      {
+        "id": 17,
+        "title": "هودی مینیمال طوسی",
+        "image": "/images/products/p17.png",
+        "price": 1890000,
+        "discount": 10,
+        "stock": 4,
+        "rating": 4.2
+      },
+      {
+        "id": 18,
+        "title": "شلوار بگ مشکی",
+        "image": "/images/products/p18.png",
+        "price": 2290000,
+        "stock": 8,
+        "rating": 3.9
+      },
+      {
+        "id": 19,
+        "title": "بافت یقه گرد",
+        "image": "/images/products/p19.png",
+        "price": 1390000,
+        "stock": 9,
+        "rating": 4.0
+      },
+      {
+        "id": 20,
+        "title": "کیف کراس بادی",
+        "image": "/images/products/p20.png",
+        "price": 990000,
+        "discount": 7,
+        "stock": 10,
+        "rating": 4.3
+      }
+    ],
+
+    "bestSelling": [
+      {
+        "id": 21,
+        "title": "پافر کوتاه مشکی",
+        "image": "/images/p1.png",
+        "price": 3590000,
+        "stock": 5,
+        "rating": 4.7
+      },
+      {
+        "id": 22,
+        "title": "بافت یقه اسکی",
+        "image": "/images/p2.png",
+        "price": 1390000,
+        "discount": 18,
+        "stock": 9,
+        "rating": 4.5
+      },
+      {
+        "id": 23,
+        "title": "شلوار مام فیت",
+        "image": "/images/p3.png",
+        "price": 1990000,
+        "stock": 0,
+        "rating": 4.1
+      },
+      {
+        "id": 24,
+        "title": "شومیز نخی آبی",
+        "image": "/images/p4.png",
+        "price": 1190000,
+        "stock": 7,
+        "rating": 3.8
+      },
+      {
+        "id": 25,
+        "title": "کت رسمی زنانه",
+        "image": "/images/p5.png",
+        "price": 2890000,
+        "discount": 10,
+        "stock": 3,
+        "rating": 4.4
+      },
+      {
+        "id": 26,
+        "title": "کیف چرمی قهوه‌ای",
+        "image": "/images/p6.png",
+        "price": 1690000,
+        "stock": 0,
+        "rating": 4.0
+      },
+      {
+        "id": 27,
+        "title": "مانتو تابستانی سفید",
+        "image": "/images/products/p27.png",
+        "price": 2490000,
+        "discount": 8,
+        "stock": 5,
+        "rating": 4.2
+      },
+      {
+        "id": 28,
+        "title": "کت جین بلند",
+        "image": "/images/products/p28.png",
+        "price": 3190000,
+        "stock": 2,
+        "rating": 4.5
+      },
+      {
+        "id": 29,
+        "title": "شلوار لینن کرم",
+        "image": "/images/products/p29.png",
+        "price": 1590000,
+        "stock": 11,
+        "rating": 4.1
+      },
+      {
+        "id": 30,
+        "title": "کفش اسپرت سفید",
+        "image": "/images/products/p30.png",
+        "price": 2790000,
+        "discount": 15,
+        "stock": 4,
+        "rating": 4.6
+      }
+    ],
+
+    "specialSale": [
+      {
+        "id": 31,
+        "title": "پالتو فوتر طوسی",
+        "image": "/images/p1.png",
+        "price": 3990000,
+        "discount": 30,
+        "stock": 2,
+        "rating": 4.8
+      },
+      {
+        "id": 32,
+        "title": "شومیز کلاسیک سفید",
+        "image": "/images/p2.png",
+        "price": 1090000,
+        "discount": 20,
+        "stock": 10,
+        "rating": 4.5
+      },
+      {
+        "id": 33,
+        "title": "هودی اورسایز",
+        "image": "/images/p3.png",
+        "price": 1790000,
+        "discount": 15,
+        "stock": 0,
+        "rating": 4.1
+      },
+      {
+        "id": 34,
+        "title": "کیف کمری زنانه",
+        "image": "/images/p4.png",
+        "price": 890000,
+        "discount": 8,
+        "stock": 12,
+        "rating": 4.3
+      },
+      {
+        "id": 35,
+        "title": "کفش بوت بلند",
+        "image": "/images/p5.png",
+        "price": 4290000,
+        "discount": 25,
+        "stock": 1,
+        "rating": 4.7
+      },
+      {
+        "id": 36,
+        "title": "بافت موهر کرم",
+        "image": "/images/p6.png",
+        "price": 1490000,
+        "discount": 10,
+        "stock": 0,
+        "rating": 4.2
+      },
+      {
+        "id": 37,
+        "title": "شلوار پارچه‌ای مشکی",
+        "image": "/images/products/p37.png",
+        "price": 1890000,
+        "discount": 12,
+        "stock": 6,
+        "rating": 4.4
+      },
+      {
+        "id": 38,
+        "title": "کت چهارخانه",
+        "image": "/images/products/p38.png",
+        "price": 3390000,
+        "discount": 18,
+        "stock": 0,
+        "rating": 4.6
+      },
+      {
+        "id": 39,
+        "title": "کیف دوشی کوچک",
+        "image": "/images/products/p39.png",
+        "price": 790000,
+        "discount": 5,
+        "stock": 9,
+        "rating": 4.1
+      },
+      {
+        "id": 40,
+        "title": "مانتو کمربندی",
+        "image": "/images/products/p40.png",
+        "price": 2990000,
+        "discount": 20,
+        "stock": 2,
+        "rating": 4.5
+      }
+    ]
+  },
+
+  "faq": {
+    "categories": [
+      {
+        "id": "auth",
+        "title": "ورود و ثبت نام",
+        "icon": "user",
+        "items": [
+          {
+            "id": 1,
+            "question": "چطور ثبت‌نام کنم؟",
+            "answer": "از صفحه ثبت‌نام با وارد کردن ایمیل و رمز عبور می‌توانید حساب بسازید."
+          },
+          {
+            "id": 2,
+            "question": "اگر رمز عبور را فراموش کنم چه کنم؟",
+            "answer": "از گزینه فراموشی رمز عبور برای بازیابی استفاده کنید."
+          },
+          {
+            "id": 3,
+            "question": "آیا بدون ثبت‌نام می‌توان خرید کرد؟",
+            "answer": "خیر، برای خرید باید وارد حساب کاربری شوید."
+          },
+          {
+            "id": 4,
+            "question": "چطور وارد حساب کاربری شوم؟",
+            "answer": "با ایمیل و رمز عبور در صفحه ورود وارد شوید."
+          },
+          {
+            "id": 5,
+            "question": "آیا امکان ورود با گوگل وجود دارد؟",
+            "answer": "بله، ورود با حساب گوگل نیز پشتیبانی می‌شود."
+          },
+          {
+            "id": 6,
+            "question": "چطور ایمیل خود را تایید کنم؟",
+            "answer": "لینک تایید به ایمیل شما ارسال می‌شود."
+          },
+          {
+            "id": 7,
+            "question": "چند حساب می‌توانم داشته باشم؟",
+            "answer": "هر کاربر فقط یک حساب فعال می‌تواند داشته باشد."
+          },
+          {
+            "id": 8,
+            "question": "آیا اطلاعات من امن است؟",
+            "answer": "بله، اطلاعات کاربران با رمزنگاری ذخیره می‌شود."
+          }
+        ]
+      },
+      {
+        "id": "support",
+        "title": "پشتیبانی",
+        "icon": "support",
+        "items": [
+          {
+            "id": 1,
+            "question": "چطور با پشتیبانی تماس بگیرم؟",
+            "answer": "از بخش تماس با ما یا چت آنلاین استفاده کنید."
+          },
+          {
+            "id": 2,
+            "question": "ساعات پاسخگویی پشتیبانی چیست؟",
+            "answer": "هر روز از ۹ صبح تا ۹ شب فعال است."
+          },
+          {
+            "id": 3,
+            "question": "پشتیبانی تلفنی دارید؟",
+            "answer": "بله، شماره تماس در سایت موجود است."
+          },
+          {
+            "id": 4,
+            "question": "چقدر طول می‌کشد پاسخ بدهید؟",
+            "answer": "معمولاً کمتر از ۲ ساعت پاسخ داده می‌شود."
+          },
+          {
+            "id": 5,
+            "question": "آیا پشتیبانی آنلاین دارید؟",
+            "answer": "بله، چت آنلاین ۲۴ ساعته فعال است."
+          },
+          {
+            "id": 6,
+            "question": "می‌توانم درخواست خود را پیگیری کنم؟",
+            "answer": "بله، از بخش تیکت‌ها قابل پیگیری است."
+          },
+          {
+            "id": 7,
+            "question": "پشتیبانی شامل چه مواردی است؟",
+            "answer": "مشکلات سفارش، پرداخت و حساب کاربری."
+          },
+          {
+            "id": 8,
+            "question": "آیا پشتیبانی رایگان است؟",
+            "answer": "بله، تمام خدمات پشتیبانی رایگان است."
+          }
+        ]
+      },
+      {
+        "id": "payment",
+        "title": "پرداخت",
+        "icon": "pay",
+        "items": [
+          {
+            "id": 1,
+            "question": "چه روش‌های پرداختی پشتیبانی می‌شود؟",
+            "answer": "کارت‌های بانکی عضو شتاب، کیف پول الکترونیکی و کارت‌های اعتباری بین‌المللی پشتیبانی می‌شوند."
+          },
+          {
+            "id": 2,
+            "question": "آیا امکان پرداخت اقساطی وجود دارد؟",
+            "answer": "بله، از طریق همکاری با موسسات اعتباری، امکان خرید اقساطی فراهم است."
+          },
+          {
+            "id": 3,
+            "question": "چطور از موفقیت پرداخت مطمئن شوم؟",
+            "answer": "کد پیگیری پرداخت به ایمیل و پنل کاربری شما نمایش داده می‌شود."
+          },
+          {
+            "id": 4,
+            "question": "آیا هزینه اضافی برای پرداخت دریافت می‌شود؟",
+            "answer": "خیر، تمام هزینه‌های کارمزد بانکی بر عهده فروشنده است."
+          },
+          {
+            "id": 5,
+            "question": "چطور فاکتور خرید دریافت کنم؟",
+            "answer": "پس از پرداخت موفق، فاکتور رسمی به ایمیل شما ارسال می‌شود."
+          },
+          {
+            "id": 6,
+            "question": "در صورت پرداخت ناموفق چه کنم؟",
+            "answer": "مبلغ ظرف ۷۲ ساعت به حساب شما برمی‌گردد. در غیر این صورت با پشتیبانی تماس بگیرید."
+          },
+          {
+            "id": 7,
+            "question": "آیا می‌توان از تخفیف همزمان با پرداخت استفاده کرد؟",
+            "answer": "بله، کد تخفیف در صفحه تسویه‌حساب قابل اعمال است."
+          },
+          {
+            "id": 8,
+            "question": "حداقل و حداکثر مبلغ هر تراکنش چقدر است؟",
+            "answer": "حداقل ۱۰ هزار تومان و حداکثر ۵۰ میلیون تومان (ممکن است بسته به بانک متفاوت باشد)."
+          }
+        ]
+      },
+      {
+        "id": "account",
+        "title": "حساب کاربری",
+        "icon": "lock",
+        "items": [
+          {
+            "id": 1,
+            "question": "چطور اطلاعات پروفایل خود را ویرایش کنم؟",
+            "answer": "وارد پنل کاربری شوید و از بخش «ویرایش پروفایل» اطلاعات خود را به‌روزرسانی کنید."
+          },
+          {
+            "id": 2,
+            "question": "چطور رمز عبور خود را تغییر دهم؟",
+            "answer": "به بخش «تغییر رمز عبور» در حساب کاربری بروید و رمز جدید را وارد کنید."
+          },
+          {
+            "id": 3,
+            "question": "آیا می‌توانم ایمیل خود را تغییر دهم؟",
+            "answer": "بله، اما ایمیل جدید باید تایید شود و ایمیل قبلی به‌طور خودکار غیرفعال می‌گردد."
+          },
+          {
+            "id": 4,
+            "question": "چطور شماره موبایل خود را اضافه کنم؟",
+            "answer": "از بخش «اطلاعات تماس» شماره موبایل را وارد و با کد تایید آن را فعال کنید."
+          },
+          {
+            "id": 5,
+            "question": "آیا می‌توانم حساب کاربری خود را حذف کنم؟",
+            "answer": "بله، در بخش «تنظیمات پیشرفته» گزینه حذف حساب وجود دارد. این عمل غیرقابل بازگشت است."
+          },
+          {
+            "id": 6,
+            "question": "چطور آدرس تحویل خود را مدیریت کنم؟",
+            "answer": "از بخش «آدرس‌های من» می‌توانید آدرس جدید اضافه، ویرایش یا حذف کنید."
+          },
+          {
+            "id": 7,
+            "question": "آیا تاریخچه سفارشات من ذخیره می‌شود؟",
+            "answer": "بله، تمام سفارشات شما در بخش «تاریخچه خرید» قابل مشاهده است."
+          },
+          {
+            "id": 8,
+            "question": "چطور اطلاعیه‌های ایمیلی را مدیریت کنم؟",
+            "answer": "در بخش «تنظیمات اعلان‌ها» می‌توانید دریافت ایمیل‌های تبلیغاتی و اطلاعیه‌ها را فعال یا غیرفعال کنید."
+          }
+        ]
+      },
+      {
+        "id": "order",
+        "title": "ثبت سفارش",
+        "icon": "cart",
+        "items": [
+          {
+            "id": 1,
+            "question": "چطور سفارش ثبت کنم؟",
+            "answer": "محصول را انتخاب و به سبد خرید اضافه کنید."
+          },
+          {
+            "id": 2,
+            "question": "آیا امکان تغییر سفارش وجود دارد؟",
+            "answer": "تا قبل از ارسال می‌توانید سفارش را تغییر دهید."
+          },
+          {
+            "id": 3,
+            "question": "چطور سبد خرید را مدیریت کنم؟",
+            "answer": "از صفحه سبد خرید می‌توانید ویرایش کنید."
+          },
+          {
+            "id": 4,
+            "question": "حداقل مبلغ سفارش چقدر است؟",
+            "answer": "حداقل مبلغ خاصی وجود ندارد."
+          },
+          {
+            "id": 5,
+            "question": "آیا می‌توانم چند محصول سفارش دهم؟",
+            "answer": "بله، محدودیتی وجود ندارد."
+          },
+          {
+            "id": 6,
+            "question": "چطور سفارش را نهایی کنم؟",
+            "answer": "بعد از پرداخت، سفارش ثبت می‌شود."
+          },
+          {
+            "id": 7,
+            "question": "آیا امکان لغو سفارش هست؟",
+            "answer": "تا قبل از ارسال امکان لغو وجود دارد."
+          },
+          {
+            "id": 8,
+            "question": "چطور کد تخفیف وارد کنم؟",
+            "answer": "در مرحله پرداخت کد تخفیف وارد می‌شود."
+          }
+        ]
+      },
+      {
+        "id": "shipping",
+        "title": "ارسال سفارش",
+        "icon": "truck",
+        "items": [
+          {
+            "id": 1,
+            "question": "زمان ارسال چقدر است؟",
+            "answer": "بین ۲ تا ۵ روز کاری."
+          },
+          {
+            "id": 2,
+            "question": "روش‌های ارسال چیست؟",
+            "answer": "پست، پیک و ارسال سریع."
+          },
+          {
+            "id": 3,
+            "question": "آیا ارسال رایگان دارید؟",
+            "answer": "برای خریدهای بالا ارسال رایگان است."
+          },
+          {
+            "id": 4,
+            "question": "چطور آدرس را تغییر دهم؟",
+            "answer": "قبل از ارسال می‌توانید آدرس را ویرایش کنید."
+          },
+          {
+            "id": 5,
+            "question": "ارسال به همه شهرها دارید؟",
+            "answer": "بله، سراسر کشور ارسال انجام می‌شود."
+          },
+          {
+            "id": 6,
+            "question": "چطور وضعیت ارسال را ببینم؟",
+            "answer": "در بخش سفارش‌ها قابل مشاهده است."
+          },
+          {
+            "id": 7,
+            "question": "آیا امکان ارسال فوری دارید؟",
+            "answer": "در برخی شهرها ارسال فوری فعال است."
+          },
+          {
+            "id": 8,
+            "question": "اگر بسته دیر رسید چه کنم؟",
+            "answer": "با پشتیبانی تماس بگیرید."
+          }
+        ]
+      },
+      {
+        "id": "popular",
+        "title": "سوالات پرتکرار",
+        "icon": "help",
+        "items": [
+          {
+            "id": 1,
+            "question": "چطور سفارش ثبت کنم؟",
+            "answer": "محصول را انتخاب کرده و به سبد خرید اضافه کنید و سپس پرداخت را انجام دهید."
+          },
+          {
+            "id": 2,
+            "question": "چقدر طول می‌کشد سفارش برسد؟",
+            "answer": "بین ۲ تا ۵ روز کاری بسته به شهر مقصد."
+          },
+          {
+            "id": 3,
+            "question": "آیا امکان لغو سفارش هست؟",
+            "answer": "بله، قبل از ارسال سفارش امکان لغو وجود دارد."
+          },
+          {
+            "id": 4,
+            "question": "چطور کد تخفیف استفاده کنم؟",
+            "answer": "در مرحله پرداخت کد تخفیف را وارد کنید."
+          },
+          {
+            "id": 5,
+            "question": "اگر محصول خراب باشد چه کنم؟",
+            "answer": "می‌توانید درخواست مرجوعی ثبت کنید."
+          },
+          {
+            "id": 6,
+            "question": "آیا ارسال رایگان دارید؟",
+            "answer": "برای خریدهای بالای مبلغ مشخص ارسال رایگان است."
+          },
+          {
+            "id": 7,
+            "question": "چطور سفارش را رهگیری کنم؟",
+            "answer": "از بخش سفارش‌های من وضعیت را مشاهده کنید."
+          },
+          {
+            "id": 8,
+            "question": "آیا امکان پرداخت در محل هست؟",
+            "answer": "بسته به شهر و شرایط سفارش فعال می‌شود."
+          }
+        ]
+      },
+      {
+        "id": "seller_shipping",
+        "title": "ارسال کالا",
+        "icon": "officer",
+        "items": [
+          {
+            "id": 1,
+            "question": "ارسال توسط فروشنده یعنی چه؟",
+            "answer": "یعنی محصول مستقیم توسط فروشنده ارسال می‌شود."
+          },
+          {
+            "id": 2,
+            "question": "زمان ارسال فروشنده چقدر است؟",
+            "answer": "بسته به فروشنده متفاوت است."
+          },
+          {
+            "id": 3,
+            "question": "آیا تضمین کیفیت وجود دارد؟",
+            "answer": "بله، محصولات بررسی می‌شوند."
+          },
+          {
+            "id": 4,
+            "question": "چطور فروشنده را انتخاب کنم؟",
+            "answer": "در صفحه محصول قابل مشاهده است."
+          },
+          {
+            "id": 5,
+            "question": "آیا امکان مرجوعی وجود دارد؟",
+            "answer": "بله طبق قوانین سایت."
+          },
+          {
+            "id": 6,
+            "question": "آیا هزینه ارسال بیشتر است؟",
+            "answer": "ممکن است متفاوت باشد."
+          },
+          {
+            "id": 7,
+            "question": "چطور با فروشنده ارتباط بگیرم؟",
+            "answer": "از طریق پیام در سایت."
+          },
+          {
+            "id": 8,
+            "question": "آیا همه محصولات فروشنده‌ای هستند؟",
+            "answer": "خیر، برخی مستقیم از انبار ارسال می‌شوند."
+          }
+        ]
+      },
+      {
+        "id": "returns",
+        "title": "بازگرداندن کالا",
+        "icon": "returned",
+        "items": [
+          {
+            "id": 1,
+            "question": "تا چند روز امکان مرجوعی هست؟",
+            "answer": "تا ۷ روز بعد از خرید."
+          },
+          {
+            "id": 2,
+            "question": "شرایط بازگشت کالا چیست؟",
+            "answer": "باید کالا سالم باشد."
+          },
+          {
+            "id": 3,
+            "question": "چطور کالا را مرجوع کنم؟",
+            "answer": "از بخش سفارش‌ها درخواست ثبت کنید."
+          },
+          {
+            "id": 4,
+            "question": "هزینه مرجوعی با کیست؟",
+            "answer": "در برخی موارد بر عهده فروشگاه است."
+          },
+          {
+            "id": 5,
+            "question": "چقدر طول می‌کشد پول برگشت داده شود؟",
+            "answer": "۳ تا ۵ روز کاری."
+          },
+          {
+            "id": 6,
+            "question": "آیا همه کالاها قابل بازگشت هستند؟",
+            "answer": "خیر، برخی محصولات شامل نمی‌شوند."
+          },
+          {
+            "id": 7,
+            "question": "اگر کالا خراب باشد چه کنم؟",
+            "answer": "بلافاصله به پشتیبانی اطلاع دهید."
+          },
+          {
+            "id": 8,
+            "question": "چطور وضعیت مرجوعی را پیگیری کنم؟",
+            "answer": "در حساب کاربری قابل مشاهده است."
+          }
+        ]
+      },
+      {
+        "id": "discount",
+        "title": "کد تخفیف",
+        "icon": "tag",
+        "items": [
+          {
+            "id": 1,
+            "question": "کد تخفیف را کجا وارد کنم؟",
+            "answer": "در مرحله پرداخت وارد کنید."
+          },
+          {
+            "id": 2,
+            "question": "آیا کد تخفیف منقضی می‌شود؟",
+            "answer": "بله، هر کد تاریخ انقضا دارد."
+          },
+          {
+            "id": 3,
+            "question": "چند بار می‌توان از کد استفاده کرد؟",
+            "answer": "بسته به شرایط کد متفاوت است."
+          },
+          {
+            "id": 4,
+            "question": "چرا کد تخفیف کار نمی‌کند؟",
+            "answer": "ممکن است منقضی یا نامعتبر باشد."
+          },
+          {
+            "id": 5,
+            "question": "آیا کد تخفیف قابل ترکیب است؟",
+            "answer": "معمولاً خیر."
+          },
+          {
+            "id": 6,
+            "question": "از کجا کد تخفیف بگیرم؟",
+            "answer": "از کمپین‌ها و ایمیل‌ها."
+          },
+          {
+            "id": 7,
+            "question": "آیا برای خرید اول کد دارید؟",
+            "answer": "بله، کد ویژه کاربران جدید داریم."
+          },
+          {
+            "id": 8,
+            "question": "چطور تخفیف فعال شود؟",
+            "answer": "بعد از اعمال کد در پرداخت."
+          }
+        ]
+      },
+      {
+        "id": "tracking",
+        "title": "رهگیری سفارش",
+        "icon": "package",
+        "items": [
+          {
+            "id": 1,
+            "question": "چطور سفارش را رهگیری کنم؟",
+            "answer": "از بخش سفارش‌های من."
+          },
+          {
+            "id": 2,
+            "question": "کد رهگیری کجا است؟",
+            "answer": "بعد از ارسال پیامک می‌شود."
+          },
+          {
+            "id": 3,
+            "question": "وضعیت سفارش چیست؟",
+            "answer": "در پنل کاربری قابل مشاهده است."
+          },
+          {
+            "id": 4,
+            "question": "چرا وضعیت تغییر نکرده؟",
+            "answer": "ممکن است هنوز پردازش نشده باشد."
+          },
+          {
+            "id": 5,
+            "question": "آیا رهگیری لحظه‌ای است؟",
+            "answer": "بله در برخی روش‌ها."
+          },
+          {
+            "id": 6,
+            "question": "اگر کد رهگیری نداشتم چه کنم؟",
+            "answer": "با پشتیبانی تماس بگیرید."
+          },
+          {
+            "id": 7,
+            "question": "سفارش من گم شده چه کنم؟",
+            "answer": "به پشتیبانی اطلاع دهید."
+          },
+          {
+            "id": 8,
+            "question": "چطور تاریخ تحویل را ببینم؟",
+            "answer": "در جزئیات سفارش."
+          }
+        ]
+      },
+      {
+        "id": "other",
+        "title": "سایر موارد",
+        "icon": "morehorizontal",
+        "items": [
+          {
+            "id": 1,
+            "question": "آیا اپلیکیشن دارید؟",
+            "answer": "بله برای اندروید و iOS."
+          },
+          {
+            "id": 2,
+            "question": "چطور پیشنهاد ثبت کنم؟",
+            "answer": "از بخش تماس با ما."
+          },
+          {
+            "id": 3,
+            "question": "آیا همکاری فروش دارید؟",
+            "answer": "بله، فرم همکاری موجود است."
+          },
+          {
+            "id": 4,
+            "question": "چطور خبرنامه عضو شوم؟",
+            "answer": "ایمیل خود را ثبت کنید."
+          },
+          {
+            "id": 5,
+            "question": "آیا حساب سازمانی دارید؟",
+            "answer": "بله برای شرکت‌ها."
+          },
+          {
+            "id": 6,
+            "question": "چطور اعلان‌ها را فعال کنم؟",
+            "answer": "در تنظیمات حساب."
+          },
+          { "id": 7, "question": "آیا سایت چند زبانه است؟", "answer": "بله." },
+          {
+            "id": 8,
+            "question": "چطور با شما همکاری کنم؟",
+            "answer": "از فرم همکاری."
+          }
+        ]
+      }
+    ]
+  },
+  "logout": {
+    "title": "از حساب کاربری خارج می‌شوید؟",
+    "description": "با خروج از حساب کاربری به سبد خرید فعلی‌تان دسترسی نخواهید داشت. هروقت بخواهید می‌توانید مجددا وارد شوید و خرید خود را نهایی کنید.",
+    "cancelLabel": "انصراف",
+    "confirmLabel": "خروج از حساب"
+  },
+
+  "addresses": [
+    {
+      "id": 1,
+      "type": "محل کار",
+      "address": "شیراز شهرک آرین پارک علم و فناوری ساختمان آپادانا",
+      "receiver": "هدیه کرونی",
+      "postalCode": "۴۵۷۸۹۳۲۰۸۰"
+    },
+    {
+      "id": 2,
+      "type": "محل سکونت",
+      "address": "تهران، خیابان ولیعصر، بالاتر از میدان ونک، پلاک ۱۲۳",
+      "receiver": "هدیه کرونی",
+      "postalCode": "۱۲۳۴۵۶۷۸۹۰"
+    },
+    {
+      "id": 3,
+      "type": "محل تحصیل",
+      "address": "شیراز، بلوار جمهوری، دانشگاه شیراز، دانشکده فنیهوری، دانشگاه شیراز، دانشکده فنیهوری، دانشگاه شیراز، دانشکده فنیهوری، دانشگاه شیراز، دانشکده فنیهوری، دانشگاه شیراز، دانشکده فنیهوری، دانشگاه شیراز، دانشکده فنیهوری، دانشگاه شیراز، دانشکده فنیهوری، دانشگاه شیراز، دانشکده فنیهوری، دانشگاه شیراز، دانشکده فنیهوری، دانشگاه شیراز، دانشکده فنیهوری، دانشگاه شیراز، دانشکده فنیهوری، دانشگاه شیراز، دانشکده فنیهوری، دانشگاه شیراز، دانشکده فنیهوری، دانشگاه شیراز، دانشکده فنی",
+      "receiver": "هدیه کرونی",
+      "postalCode": "۹۸۷۶۵۴۳۲۱۰"
+    }
+  ],
+  "texts": {
+    "addressess": "آدرس ها",
+    "addAddress": "افزودن آدرس",
+    "myAddresses": "آدرس های من",
+    "receiver": "گیرنده :",
+    "postalCode": "کد پستی :"
+  }
+}

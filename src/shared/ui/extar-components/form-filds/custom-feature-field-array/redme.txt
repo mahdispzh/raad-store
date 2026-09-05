@@ -1,0 +1,107 @@
+"use client";
+
+import React from "react";
+import { useForm } from "react-hook-form";
+
+import { FeatureFieldArray } from "@/shared/ui/feature-field-array";
+
+type FormValues = {
+  tags: { value: string }[];
+  attributes: { attributeName: string; value: string }[];
+  specs: { attributeName: string; value: string }[];
+};
+
+export default function ProductForm() {
+  const { control, handleSubmit } = useForm<FormValues>({
+    defaultValues: {
+      tags: [],
+      attributes: [],
+      specs: [],
+    },
+  });
+
+  const onSubmit = (data: FormValues) => {
+    console.log("FINAL PAYLOAD:", data);
+  };
+
+  return (
+    <form onSubmit={handleSubmit(onSubmit)} className="space-y-10 p-6">
+
+      {/* ================= SINGLE ================= */}
+      <div className="space-y-2">
+        <h2 className="font-bold text-lg">Tags (Single Mode)</h2>
+
+        <FeatureFieldArray<FormValues>
+          control={control}
+          name="tags"
+          mode="single"
+          firstField={{
+            name: "value",
+            label: "Tag",
+            placeholder: "مثلاً: Nike",
+          }}
+        />
+      </div>
+
+      {/* ================= PAIR ================= */}
+      <div className="space-y-2">
+        <h2 className="font-bold text-lg">Attributes (Pair Mode)</h2>
+
+        <FeatureFieldArray<FormValues>
+          control={control}
+          name="attributes"
+          mode="pair"
+          firstField={{
+            name: "attributeName",
+            label: "Attribute Name",
+            placeholder: "مثلاً: Size",
+          }}
+          secondField={{
+            name: "value",
+            label: "Value",
+            placeholder: "مثلاً: MD",
+          }}
+        />
+      </div>
+
+      {/* ================= SELECT + INPUT ================= */}
+      <div className="space-y-2">
+        <h2 className="font-bold text-lg">Specs (Select + Input)</h2>
+
+        <FeatureFieldArray<FormValues>
+          control={control}
+          name="specs"
+          mode="select-input"
+          firstField={{
+            name: "attributeName",
+            label: "Attribute",
+          }}
+          secondField={{
+            name: "value",
+            label: "Value",
+            placeholder: "مثلاً: Red / XL / Samsung",
+          }}
+          selectField={{
+            options: [
+              { value: "color", label: "Color" },
+              { value: "size", label: "Size" },
+              { value: "brand", label: "Brand" },
+            ],
+            searchable: true,
+            placeholder: "Select attribute",
+          }}
+        />
+      </div>
+
+      {/* ================= SUBMIT ================= */}
+      <div>
+        <button
+          type="submit"
+          className="px-5 py-2 bg-black text-white rounded"
+        >
+          Submit Product
+        </button>
+      </div>
+    </form>
+  );
+}

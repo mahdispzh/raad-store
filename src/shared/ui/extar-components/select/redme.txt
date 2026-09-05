@@ -1,0 +1,94 @@
+حالت 1 - بدون React Hook Form
+
+"use client";
+
+import { useState } from "react";
+
+import { Select } from "@/src/shared/ui/select";
+
+import { cities } from "./mock-data";
+
+export default function ProductForm() {
+  const [cityId, setCityId] = useState<number | null>(null);
+
+  return (
+    <form className="space-y-4">
+      <Select
+        label="شهر"
+        placeholder="انتخاب شهر"
+        options={cities}
+        value={cityId}
+        onChange={setCityId}
+        searchable
+      />
+
+      <div>
+        مقدار انتخاب شده:
+        {cityId}
+      </div>
+    </form>
+  );
+}
+
+حالت 2 - با React Hook Form
+
+"use client";
+
+import { Controller, useForm } from "react-hook-form";
+
+import { Select } from "@/src/shared/ui/select";
+
+import { cities } from "./mock-data";
+
+interface FormValues {
+  cityId: number | null;
+}
+
+export default function ProductForm() {
+  const { control, handleSubmit } = useForm<FormValues>({
+    defaultValues: {
+      cityId: null,
+    },
+  });
+
+  const onSubmit = (data: FormValues) => {
+    console.log(data);
+  };
+
+  return (
+    <form onSubmit={handleSubmit(onSubmit)}>
+      <Controller
+        name="cityId"
+        control={control}
+        render={({ field }) => (
+          <Select
+            label="شهر"
+            placeholder="انتخاب شهر"
+            options={cities}
+            value={field.value}
+            onChange={field.onChange}
+            searchable
+          />
+        )}
+      />
+
+      <button type="submit">
+        ثبت
+      </button>
+    </form>
+  );
+}
+
+
+اگر زیاد از React Hook Form استفاده می‌کنی
+
+من یه کامپوننت Wrapper هم براش می‌سازم:
+
+<RHFSelect
+  name="cityId"
+  control={control}
+  label="شهر"
+  options={cities}
+/>
+
+که دیگه لازم نباشه هر بار Controller بنویسی.

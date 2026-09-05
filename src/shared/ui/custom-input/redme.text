@@ -1,0 +1,130 @@
+فرم کامل RHF + Zod
+
+"use client";
+
+import { Controller, useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import {CustomInput} from "@/src/shared/ui/custom-input/custom-input-ui";
+import {formSchema, FormValues} from "@/src/shared/ui/custom-input/form-schema";
+
+export default function ExampleForm() {
+  const {
+    control,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<FormValues>({
+    resolver: zodResolver(formSchema),
+
+    mode: "onChange",
+
+    defaultValues: {
+      name: "",
+      email: "",
+      password: "",
+      phone: "",
+      age: undefined,
+    },
+  });
+
+  const onSubmit = (data: FormValues) => {
+    console.log(data);
+  };
+
+  return (
+    <form
+      onSubmit={handleSubmit(onSubmit)}
+      className="flex flex-col gap-4"
+    >
+      {/* NAME */}
+      <Controller
+        control={control}
+        name="name"
+        render={({ field }) => (
+          <CustomInput
+            value={field.value ?? ""}
+            onChange={field.onChange}
+            label="نام و نام خانوادگی"
+            placeholder="نام خود را وارد کنید"
+            required
+            error={errors.name?.message}
+          />
+        )}
+      />
+
+      {/* EMAIL */}
+      <Controller
+        control={control}
+        name="email"
+        render={({ field }) => (
+          <CustomInput
+            value={field.value ?? ""}
+            onChange={field.onChange}
+            type="email"
+            label="ایمیل"
+            placeholder="example@gmail.com"
+            required
+            error={errors.email?.message}
+          />
+        )}
+      />
+
+      {/* PASSWORD */}
+      <Controller
+        control={control}
+        name="password"
+        render={({ field }) => (
+          <CustomInput
+            value={field.value ?? ""}
+            onChange={field.onChange}
+            type="password"
+            label="رمز عبور"
+            placeholder="******"
+            required
+            error={errors.password?.message}
+          />
+        )}
+      />
+
+      {/* PHONE */}
+      <Controller
+        control={control}
+        name="phone"
+        render={({ field }) => (
+          <CustomInput
+            value={field.value ?? ""}
+            onChange={field.onChange}
+            type="phone"
+            label="شماره موبایل"
+            placeholder="09123456789"
+            required
+            error={errors.phone?.message}
+          />
+        )}
+      />
+
+      {/* NUMBER */}
+      <Controller
+        control={control}
+        name="age"
+        render={({ field }) => (
+          <CustomInput
+            value={field.value ?? ""}
+            onChange={field.onChange}
+            type="number"
+            label="سن"
+            placeholder="18"
+            error={errors.age?.message}
+          />
+        )}
+      />
+
+      <button
+        type="submit"
+        className="h-[45px] rounded-sm border"
+      >
+        ثبت اطلاعات
+      </button>
+    </form>
+  );
+}
+
