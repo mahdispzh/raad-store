@@ -1,5 +1,5 @@
 ﻿import re, pathlib, json
-root=pathlib.Path(r'c:/Users/HosseinAzadpoor/untitled-store')
+root=pathlib.Path(r'c:/Users/HosseinAzadpoor/raad-store')
 schema=(root/'prisma'/'schema.prisma').read_text(encoding='utf-8')
 models={}
 for block in re.finditer(r'model\s+(\w+)\s*\{([^}]*)\}', schema, re.S):

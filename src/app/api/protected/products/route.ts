@@ -153,7 +153,7 @@ export const POST = withAuth(
 
       uploadedImages = await uploadImages({
         files: imageFiles,
-        folder: "untitled-store/product",
+        folder: "raad-store/product",
       });
 
       // -------------------------

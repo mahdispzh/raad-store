@@ -47,7 +47,7 @@ export const GET = withAuth(async () => {
 //       // Upload image to ParsPack
 //       imageUrl = await uploadImage({
 //         file: imageFile,
-//         folder: "untitled-store/banners",
+//         folder: "raad-store/banners",
 //       });
 
 //       const banner = await prisma.banners.create({
@@ -110,7 +110,7 @@ export const POST = withAuth(
       // ✅ 2. آپلود تصویر جدید
       newImageUrl = await uploadImage({
         file: imageFile,
-        folder: "untitled-store/banners",
+        folder: "raad-store/banners",
       });
 
       // ✅ 3. Upsert بر اساس sort_order

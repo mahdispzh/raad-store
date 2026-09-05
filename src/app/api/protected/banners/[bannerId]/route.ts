@@ -62,7 +62,7 @@ export const PUT = withAuth(
     if (imageFile && imageFile.size > 0) {
       newImageUrl = await uploadImage({
         file: imageFile,
-        folder: "untitled-store/banners",
+        folder: "raad-store/banners",
       });
 
       await deleteImage(existing.image);

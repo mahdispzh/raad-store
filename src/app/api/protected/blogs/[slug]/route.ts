@@ -36,7 +36,7 @@ export const PUT = withAuth(
       if (imageFile && imageFile.size > 0) {
         newImageUrl = await uploadImage({
           file: imageFile,
-          folder: "untitled-store/blog",
+          folder: "raad-store/blog",
         });
       }
 

@@ -96,7 +96,7 @@ export const POST = withAuth(
       if (imageFile && imageFile.size > 0) {
         imageUrl = await uploadImage({
           file: imageFile,
-          folder: "untitled-store/blog",
+          folder: "raad-store/blog",
         });
       }
 

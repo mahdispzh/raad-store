@@ -68,7 +68,7 @@
 //       if (imageFile && imageFile.size > 0) {
 //         const newImage = await uploadImage({
 //           file: imageFile,
-//           folder: "untitled-store/categories",
+//           folder: "raad-store/categories",
 //         });
 
 //         // delete old image
@@ -176,7 +176,7 @@ export const PUT = withAuth(
       if (imageFile && imageFile.size > 0) {
         const newImage = await uploadImage({
           file: imageFile,
-          folder: "untitled-store/categories",
+          folder: "raad-store/categories",
         });
 
         if (category.image) {

@@ -14,7 +14,7 @@ export const POST = withAuth(
 
       const [url] = await uploadImages({
         files: [file],
-        folder: "untitled-store/editor",
+        folder: "raad-store/editor",
       });
 
       return NextResponse.json({ url });

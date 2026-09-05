@@ -60,7 +60,7 @@
 //       if (imageFile && imageFile.size > 0) {
 //         const newImage = await uploadImage({
 //           file: imageFile,
-//           folder: "untitled-store/brands",
+//           folder: "raad-store/brands",
 //         });
 
 //         // delete old image
@@ -158,7 +158,7 @@ export const PUT = withAuth(
       if (imageFile && imageFile.size > 0) {
         const newImage = await uploadImage({
           file: imageFile,
-          folder: "untitled-store/brands",
+          folder: "raad-store/brands",
         });
 
         if (brand.image) {

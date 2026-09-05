@@ -116,7 +116,7 @@ export const PUT = withAuth(
       if (imageFiles.length > 0) {
         uploadedImages = await uploadImages({
           files: imageFiles,
-          folder: "untitled-store/product",
+          folder: "raad-store/product",
         });
         images = uploadedImages;
       }
