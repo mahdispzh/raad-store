@@ -8,9 +8,10 @@
     ]
   },
   "scripts": {
-    "dev": "next dev -p 3006",
+    "dev": "next dev -p 3047",
     "build": "npx prisma db pull && npx prisma generate && next build",
-    "start": "next start -p 3006",
+    "start": "next start -p 3047",
+    "start:standalone": "node .next/standalone/server.js",
     "format": "prettier --write .",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",

@@ -1,0 +1,142 @@
+name: Deploy raad-store
+
+on:
+  push:
+    branches:
+      - main
+
+# Never let two deploys rsync / restart the server at the same time.
+concurrency:
+  group: deploy-raad-store
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+env:
+  SERVER_HOST: 185.218.139.36
+  SERVER_USER: root
+  APP_DIR: /home/raad-store
+  APP_PORT: "3047"
+  NEXT_TELEMETRY_DISABLED: "1"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Configure SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/vps_key
+          chmod 600 ~/.ssh/vps_key
+          ssh-keyscan -H "$SERVER_HOST" >> ~/.ssh/known_hosts
+
+      # Runtime configuration lives ONLY on the server ($APP_DIR/.env).
+      # Pull it so the build inlines the correct NEXT_PUBLIC_* values and the
+      # standalone bundle carries a matching .env.
+      - name: Fetch runtime env from server
+        run: |
+          scp -i ~/.ssh/vps_key -o StrictHostKeyChecking=accept-new \
+            "$SERVER_USER@$SERVER_HOST:$APP_DIR/.env" ./.env
+          test -s ./.env
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Generate Prisma client
+        run: pnpm exec prisma generate
+
+      - name: Build
+        run: pnpm run build
+
+      # Assemble the exact tree that will live at $APP_DIR on the server:
+      #   server.js + package.json + node_modules + .next/  (from standalone)
+      #   .next/static/                                      (not in standalone)
+      #   public/                                            (not in standalone)
+      #   ecosystem.config.js                                (pm2 entrypoint)
+      - name: Assemble standalone bundle
+        run: |
+          set -eu
+          rm -rf deploy
+          mkdir -p deploy
+
+          server_js="$(find .next/standalone -maxdepth 4 -name server.js -print -quit)"
+          if [ -z "$server_js" ]; then
+            echo "::error::.next/standalone/server.js not found — is output:'standalone' set in next.config?"
+            exit 1
+          fi
+          cp -a "$(dirname "$server_js")"/. deploy/
+
+          mkdir -p deploy/.next
+          cp -a .next/static deploy/.next/static
+          if [ -d public ]; then cp -a public deploy/public; fi
+          cp -a ./.env deploy/.env
+
+          cat > deploy/ecosystem.config.js <<EOF
+          module.exports = {
+            apps: [
+              {
+                name: "raad-store",
+                script: "server.js",
+                cwd: "${APP_DIR}",
+                instances: 1,
+                exec_mode: "fork",
+                autorestart: true,
+                max_memory_restart: "512M",
+                env: {
+                  NODE_ENV: "production",
+                  PORT: "${APP_PORT}",
+                  HOSTNAME: "0.0.0.0",
+                },
+              },
+            ],
+          };
+          EOF
+
+      - name: Upload bundle to server
+        run: |
+          rsync -az --delete --human-readable \
+            -e "ssh -i ~/.ssh/vps_key -o StrictHostKeyChecking=accept-new" \
+            deploy/ "$SERVER_USER@$SERVER_HOST:$APP_DIR/"
+
+      - name: Restart app
+        run: |
+          ssh -i ~/.ssh/vps_key -o StrictHostKeyChecking=accept-new \
+            "$SERVER_USER@$SERVER_HOST" 'bash -s' <<'EOF'
+          set -euxo pipefail
+
+          cd /home/raad-store
+
+          export NVM_DIR="$HOME/.nvm"
+          if [ -s "$NVM_DIR/nvm.sh" ]; then
+            . "$NVM_DIR/nvm.sh"
+            nvm use default || true
+          fi
+
+          # Replace whatever "raad-store" process is registered (an older one may
+          # have run `pnpm start`; the new one runs the standalone server.js).
+          pm2 delete raad-store >/dev/null 2>&1 || true
+          pm2 start ecosystem.config.js --update-env
+          pm2 save
+
+          pm2 describe raad-store >/dev/null
+          EOF
+
+      - name: Remove SSH key
+        if: always()
+        run: rm -f ~/.ssh/vps_key
