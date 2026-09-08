@@ -46,14 +46,10 @@ jobs:
           chmod 600 ~/.ssh/vps_key
           ssh-keyscan -H "$SERVER_HOST" >> ~/.ssh/known_hosts
 
-      # Runtime configuration lives ONLY on the server ($APP_DIR/.env).
-      # Pull it so the build inlines the correct NEXT_PUBLIC_* values and the
-      # standalone bundle carries a matching .env.
-      - name: Fetch runtime env from server
-        run: |
-          scp -i ~/.ssh/vps_key -o StrictHostKeyChecking=accept-new \
-            "$SERVER_USER@$SERVER_HOST:$APP_DIR/.env" ./.env
-          test -s ./.env
+      # Runtime config is committed to the repo (.env) and shipped as-is inside
+      # the standalone bundle. It is NOT pulled from the server.
+      - name: Check runtime env
+        run: test -s ./.env
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
