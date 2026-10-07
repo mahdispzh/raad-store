@@ -1,7 +1,0 @@
-<TextareaRHF
-  control={form.control}
-  name="description"
-  label="توضیحات محصول"
-  placeholder="توضیح را وارد کنید"
-  rows={5}
-/>
