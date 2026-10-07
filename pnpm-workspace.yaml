@@ -1,3 +1,12 @@
-ignoredBuiltDependencies:
-  - sharp
-  - unrs-resolver
+allowBuilds:
+  '@prisma/engines': true
+  '@scarf/scarf': false
+  '@tree-sitter-grammars/tree-sitter-yaml': false
+  bcrypt: true
+  core-js-pure: false
+  esbuild: true
+  prisma: true
+  sharp: true
+  tree-sitter: false
+  tree-sitter-json: false
+  unrs-resolver: false
