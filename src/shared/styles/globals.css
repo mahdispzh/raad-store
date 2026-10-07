@@ -1,17 +1,70 @@
 @import "tailwindcss";
-@import "./fonts.css";
-@import "./theme.css";
-@import "./utilities.css";
 
-@media print {
-  .no-print {
-    display: none !important;
+
+@font-face {
+  font-family: "Morabba";
+  src: url("/fonts/morabba/Morabba-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Morabba";
+  src: url("/fonts/morabba/Morabba-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Morabba";
+  src: url("/fonts/morabba/Morabba-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@theme {
+
+  --color-yellow: #ffc700;
+  --color-yellow-dark: #e6b300;
+  --color-black: #000000;
+  --color-grey: #6b6b6b;
+  --color-grey-light: #f4f4f4;
+  --color-grey-border: #e3e3e3;
+  --color-white: #ffffff;
+
+
+  --color-primary: var(--color-yellow);
+  --color-primary-hover: var(--color-yellow-dark);
+  --color-foreground: var(--color-black);
+  --color-background: var(--color-white);
+  --color-muted: var(--color-grey-light);
+  --color-border: var(--color-grey-border);
+
+
+  --font-sans: "Morabba", system-ui, sans-serif;
+}
+
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
   }
 }
-.scrollbar-hide {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;     /* Firefox */
-}
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;             /* Chrome, Safari, Opera */
+
+
+@utility scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
