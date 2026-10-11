@@ -38,7 +38,7 @@ export default function HeroSection({
           <Button variant="primary" size="sm" className="w-full">
             درخواست مشاوره
           </Button>
-          <Button variant="primary-outline" size="sm" className="w-full">
+          <Button variant="primaryOutline" size="sm" className="w-full">
             مشاهده محصولات
           </Button>
         </div>
