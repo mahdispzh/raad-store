@@ -3,7 +3,7 @@
 
 @font-face {
   font-family: "Morabba";
-  src: url("/fonts/morabba/Morabba-Light.woff2") format("woff2");
+  src: url("../ui/assets/fonts/Morabba-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -11,7 +11,15 @@
 
 @font-face {
   font-family: "Morabba";
-  src: url("/fonts/morabba/Morabba-Medium.woff2") format("woff2");
+  src: url("../ui/assets/fonts/Morabba-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Morabba";
+  src: url("../ui/assets/fonts/Morabba-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -19,7 +27,15 @@
 
 @font-face {
   font-family: "Morabba";
-  src: url("/fonts/morabba/Morabba-Bold.woff2") format("woff2");
+  src: url("../ui/assets/fonts/Morabba-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Morabba";
+  src: url("../ui/assets/fonts/Morabba-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
