@@ -1,6 +1,6 @@
 import { cva } from "class-variance-authority";
 
-export const sectionTitleVariants = cva("flex flex-col border-s-4 ps-2", {
+export const sectionTitleVariants = cva("flex flex-col border-s-2 ps-2", {
   variants: {
     variant: {
       primary: "border-primary",
