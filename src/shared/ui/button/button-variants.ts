@@ -9,6 +9,8 @@ export const buttonVariants = cva(
         dark: "bg-foreground text-background hover:bg-grey",
         outline: "border border-foreground bg-transparent text-foreground hover:bg-muted",
         primaryOutline: "border border-primary bg-transparent text-primary hover:bg-primary/10",
+         darkPrimary: "bg-foreground text-primary",
+
       },
       size: {
         sm: "h-10 px-5 text-sm",

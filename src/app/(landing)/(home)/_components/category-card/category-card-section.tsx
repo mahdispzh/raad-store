@@ -39,7 +39,7 @@ export default function CategoryCardSection() {
         ))}
       </div>
 
-      <div className="hidden justify-end gap-3 md:flex">
+      <div className="hidden justify-end gap-4 md:flex">
         <button
           type="button"
           onClick={() => scroll(300)}
