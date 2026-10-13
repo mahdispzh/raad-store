@@ -24,7 +24,7 @@ export default function BrandSection() {
               key={`${brand.id}-${index}`}
               src={brand.image}
               alt={brand.name}
-              className="me-10 h-16 w-auto shrink-0 md:me-16"
+              className="me-10 h-10 w-auto shrink-0 md:h-16 md:me-16"
             />
           ))}
         </div>
