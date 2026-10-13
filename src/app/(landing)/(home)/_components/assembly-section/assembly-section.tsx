@@ -16,7 +16,7 @@ export default function AssemblySection({
   return (
     <section className="flex flex-col gap-6 py-8">
       {/* title */}
-      <div className="px-4 md:px-8">
+      <div>
         <SectionTitle title={title} description={description} size="sm" />
       </div>
 

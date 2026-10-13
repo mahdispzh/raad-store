@@ -42,6 +42,7 @@
 }
 
 
+
 @theme {
 
   --color-yellow: #ffc700;
@@ -62,6 +63,17 @@
 
 
   --font-sans: "Morabba", system-ui, sans-serif;
+
+  --animate-marquee: marquee 40s linear infinite;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(-50%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
 }
 
 
