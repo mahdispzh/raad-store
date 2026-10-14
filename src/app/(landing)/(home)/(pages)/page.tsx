@@ -4,6 +4,7 @@ import BrandSection from "../_components/brand-section/brand-section";
 import CategoryCardSection from "../_components/category-card/category-card-section";
 import HeroSection from "../_components/hero-section/hero-section";
 import { HeroSectionData } from "../_components/hero-section/hero-section-constants";
+import PartnerCardSection from "../_components/partner-card/partner-card-section";
 import ReadyPanelCardSection from "../_components/ready-panel-card/ready-panel-card-section";
 import ServiceCardSection from "../_components/service-card/service-card-section";
 import SupplyCardSection from "../_components/supply-card/supply-card-section";
@@ -19,6 +20,7 @@ export default function HomePage() {
     <AssemblySection {...AssemblySectionData} />
     <SupplyCardSection />
     <BrandSection />
+    <PartnerCardSection />
   </>
 );
 }
