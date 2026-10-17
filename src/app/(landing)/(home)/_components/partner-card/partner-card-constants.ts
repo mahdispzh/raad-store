@@ -20,4 +20,10 @@ export const PartnerCards = [
     description: "پتروشیمی کنگان | متن موقت",
     image: secondImage.src,
   },
+    {
+    id: "kangan",
+    title: "افتخار همکاری با شرکت پتروشیمی کنگان",
+    description: "پتروشیمی کنگان | متن موقت",
+    image: secondImage.src,
+  },
 ];
