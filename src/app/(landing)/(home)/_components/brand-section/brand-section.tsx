@@ -8,7 +8,7 @@ export default function BrandSection() {
   return (
     <section className="flex flex-col gap-8 py-8">
       {/* title */}
-      <div>
+      <div className="page-px">
         <SectionTitle
           title="برندهای معتبر، کیفیت مطمئن"
           description="انتخاب تجهیزات از برندهای معتبر جهانی برای تضمین کیفیت و دوام محصولات راد."

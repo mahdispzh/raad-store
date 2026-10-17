@@ -14,11 +14,14 @@ export default function ServiceCardSection() {
   return (
     <section className="flex flex-col gap-6 py-8 md:gap-8">
       {/* title */}
+      <div className="page-px"> 
       <SectionTitle
         title="خدمات راد"
         description="راهکارهای مهندسی‌شده برای تأمین، کنترل و مدیریت انرژی در پروژه‌های صنعتی"
         size="sm"
+        
       />
+      </div>
 
       {/* tabs: mobile */}
       <div className="flex gap-4 rounded-xl border border-border px-4 md:hidden">
@@ -39,7 +42,7 @@ export default function ServiceCardSection() {
       </div>
 
       {/* tabs: desktop */}
-      <div className="hidden gap-3 md:flex">
+      <div className="hidden gap-3 md:flex page-px">
         <Button
           variant={activeIndex === 0 ? "darkPrimary" : "outline"}
           onClick={() => setActiveIndex(0)}
@@ -57,7 +60,7 @@ export default function ServiceCardSection() {
       </div>
 
       {/* cards */}
-      <div className="flex flex-col gap-4 md:flex-row md:gap-8">
+      <div className="flex flex-col gap-4 md:flex-row md:gap-8 page-px">
         {ServiceTabs[activeIndex]?.items.map((item) => (
           <ServiceCard
             key={item.id}

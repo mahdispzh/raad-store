@@ -19,7 +19,7 @@ export default function SupplyCardSection() {
   return (
     <section className="flex flex-col gap-6 py-8 md:gap-8">
       {/* title */}
-      <div className="flex items-start justify-between">
+      <div className="flex items-start justify-between page-px">
         <SectionTitle
           title="تامین قطعات"
           description="تامین تجهیزات و قطعات باکیفیت از برندهای معتبر و متناسب با نیاز هر پروژه."
@@ -35,7 +35,7 @@ export default function SupplyCardSection() {
       {/* cards */}
       <div
         ref={listRef}
-        className="scrollbar-hide flex snap-x snap-mandatory overflow-x-auto px-4 md:px-8"
+        className="scrollbar-hide flex overflow-x-auto page-px"
       >
         {SupplyCards.map((card) => (
           <SupplyCard key={card.id} title={card.title} image={card.image} />
@@ -43,17 +43,17 @@ export default function SupplyCardSection() {
       </div>
 
       {/* arrows */}
-      <div className="hidden justify-end gap-3 md:flex">
+      <div className="hidden justify-end gap-2 page-px md:flex">
         <button
           type="button"
-          onClick={() => scroll(300)}
+          onClick={() => scroll(-300)}
           className="flex h-8 w-8 cursor-pointer items-center justify-center rounded-full rounded-l-none border border-foreground"
         >
           <ChevronRightIcon className="text-sm text-foreground" />
         </button>
         <button
           type="button"
-          onClick={() => scroll(-300)}
+          onClick={() => scroll(300)}
           className="flex h-8 w-8 cursor-pointer items-center justify-center rounded-full rounded-r-none border border-foreground"
         >
           <ChevronLeftIcon className="text-sm text-foreground" />

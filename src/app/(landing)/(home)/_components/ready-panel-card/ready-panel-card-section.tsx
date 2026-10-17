@@ -65,17 +65,17 @@ export default function ReadyPanelCardSection() {
           ))}
         </div>
 
-        <div className="hidden justify-end gap-4 px-8 md:flex">
+        <div className="hidden justify-end gap-2 page-px md:flex">
           <button
             type="button"
-            onClick={() => scroll(300)}
+            onClick={() => scroll(-300)}
             className="flex h-8 w-8 cursor-pointer items-center justify-center rounded-full rounded-l-none border border-foreground"
           >
             <ChevronRightIcon className="text-sm text-foreground" />
           </button>
           <button
             type="button"
-            onClick={() => scroll(-300)}
+            onClick={() => scroll(300)}
             className="flex h-8 w-8 cursor-pointer items-center justify-center rounded-full rounded-r-none border border-foreground"
           >
             <ChevronLeftIcon className="text-sm text-foreground" />
