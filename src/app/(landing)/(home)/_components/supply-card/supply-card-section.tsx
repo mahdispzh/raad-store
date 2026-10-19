@@ -26,7 +26,7 @@ export default function SupplyCardSection() {
           size="sm"
         />
         <div className="hidden md:block">
-          <Button variant="primary" size="sm" icon={<ArrowLeftIcon />}>
+          <Button variant="primary" size="mobileSize" icon={<ArrowLeftIcon className="size-3" />}>
             مشاهده بیشتر
           </Button>
         </div>

@@ -7,7 +7,7 @@ export const sectionTitleVariants = cva("flex flex-col border-s-2 ps-2", {
       dark: "border-foreground",
     },
     size: {
-      mobileSize : "gap-2 md:gap-3",
+      mobileSize : "gap-2 md:gap-3 md:border-s-2 md:ps-4",
       sm: "gap-3",
       md: "gap-5",
     },
@@ -21,7 +21,7 @@ export const sectionTitleVariants = cva("flex flex-col border-s-2 ps-2", {
 export const sectionTitleHeadingVariants = cva("font-bold text-foreground", {
   variants: {
     size: {
-      mobileSize : "text-sm md:text-[10px]",
+      mobileSize : "text-sm md:text-base",
       sm: "text-base",
       md: "text-2xl",
     },

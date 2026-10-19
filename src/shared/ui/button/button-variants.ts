@@ -14,7 +14,7 @@ export const buttonVariants = cva(
       },
       size: {
         mobileSize:
-           "h-5 px-1 text-[9px] [&_svg]:size-3 md:h-10 md:px-5 md:text-sm md:[&_svg]:size-6",
+           "h-5 px-1 text-[9px] [&_svg]:size-3 md:h-10 md:px-2 md:text-sm md:[&_svg]:size-6",
         xs: "h-8 px-3 text-sm [&_svg]:size-3.5",
         sm: "h-10 px-2 text-sm [&_svg]:size-4",
         md: "h-12 px-8 text-base [&_svg]:size-5",
