@@ -13,10 +13,12 @@ export const buttonVariants = cva(
 
       },
       size: {
-        xs : "h-8 px-3 text-sm",
-        sm: "h-10 px-2 text-sm",
-        md: "h-12 px-8 text-base",
-        lg: "h-16 px-10 text-lg",
+        mobileSize:
+           "h-5 px-1 text-[9px] [&_svg]:size-3 md:h-10 md:px-5 md:text-sm md:[&_svg]:size-6",
+        xs: "h-8 px-3 text-sm [&_svg]:size-3.5",
+        sm: "h-10 px-2 text-sm [&_svg]:size-4",
+        md: "h-12 px-8 text-base [&_svg]:size-5",
+        lg: "h-16 px-10 text-lg [&_svg]:size-6",
       },
     },
     defaultVariants: {
