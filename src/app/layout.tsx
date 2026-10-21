@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "@/src/shared/styles/globals.css";
+import Footer from "@/src/shared/components/footer/footer";
 
 export const metadata: Metadata = {
   title: "برق و صنعت راد",
@@ -13,7 +14,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fa" dir="rtl">
-      <body>{children}</body>
+      <body>
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

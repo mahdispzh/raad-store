@@ -9,17 +9,17 @@ export default function PartnerCardSection() {
       {/* title */}
       <div className="flex flex-col px-4 md:w-96 md:shrink-0 md:justify-between md:px-10">
         <div className="flex flex-col gap-4 md:gap-6 md:text-center">
-          <h2 className="text-3xl font-bold text-primary md:text-4xl md:leading-normal">
+          <h2 className="text-2xl font-bold text-primary md:text-4xl md:leading-normal">
             همکاری های <br className="hidden md:block" />
             برق و صنعت راد
           </h2>
-          <p className="text-base leading-7 text-background md:text-sm md:leading-6">
+          <p className="text-[12px] leading-7 text-background md:text-sm md:leading-6">
             از پروژه‌های صنعتی تا مجموعه‌های تخصصی، راهکارهای راد متناسب با
             نیاز هر پروژه
           </p>
           <button
             type="button"
-            className="flex w-fit cursor-pointer items-center gap-1 text-sm text-primary md:hidden"
+            className="mr-auto flex w-fit cursor-pointer items-center gap-1 text-sm text-primary md:hidden"
           >
             مشاهده همه
             <ChevronLeftIcon />
@@ -37,7 +37,7 @@ export default function PartnerCardSection() {
       </div>
 
       {/* cards */}
-      <div className="scrollbar-hide flex snap-x snap-mandatory overflow-x-auto px-4 md:min-w-0 md:flex-1 md:px-0">
+      <div className="page-px scrollbar-hide flex snap-x snap-mandatory overflow-x-auto  md:min-w-0 md:flex-1">
         {PartnerCards.map((card) => (
           <PartnerCard
             key={card.id}
