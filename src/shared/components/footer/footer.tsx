@@ -31,7 +31,7 @@ export default function Footer() {
           <div className="md:hidden">
             <FooterSocial />
           </div>
-          <p className="text-sm leading-7">
+          <p className="flex text-sm leading-7 text-center">
             برق و صنعت راد (راهکارهای الکتریکی و دیجیتال) با سال‌ها تجربه در
             مشاوره، طراحی و ساخت تابلوهای برق صنعتی فشار ضعیف و متوسط، مطابق با
             استانداردهای بین‌المللی به عنوان یکی از پیشگامان این صنعت شناخته
