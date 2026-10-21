@@ -37,7 +37,7 @@ export default function PartnerCardSection() {
       </div>
 
       {/* cards */}
-      <div className="page-px scrollbar-hide flex snap-x snap-mandatory overflow-x-auto  md:min-w-0 md:flex-1">
+      <div className="scrollbar-hide flex overflow-x-auto page-px">
         {PartnerCards.map((card) => (
           <PartnerCard
             key={card.id}

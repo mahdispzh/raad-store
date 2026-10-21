@@ -51,7 +51,7 @@ export default function ReadyPanelCardSection() {
       </div>
 
       {/* cards */}
-      <div className="relative flex flex-col gap-6 md:min-w-0 md:flex-1 md:py-6">
+      <div className="relative flex flex-col gap-6 md:min-w-0 md:flex-1 md:py-6 page-px">
         <div
           ref={listRef}
           className="scrollbar-hide flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 md:ps-0 md:pe-8"
