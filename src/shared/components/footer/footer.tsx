@@ -12,9 +12,9 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="overflow-hidden rounded-t-[48px] bg-foreground text-background">
+    <footer className="overflow-hidden rounded-tr-[110px] bg-foreground text-background">
       {/* top */}
-      <div className="page-px flex flex-col gap-2 rounded-t-4xl bg-primary py-6 text-foreground md:w-1/2 md:gap-3 md:py-8">
+      <div className="page-px flex flex-col gap-2 rounded-bl-[110px] bg-primary py-6 text-foreground md:w-1/2 md:gap-3 md:py-8">
         <h2 className="text-lg font-bold md:text-2xl">
           الکتریکی راد (راهکارهای الکتریکی و دیجیتال)
         </h2>
@@ -31,7 +31,7 @@ export default function Footer() {
           <div className="md:hidden">
             <FooterSocial />
           </div>
-          <p className="flex text-sm leading-7 text-center">
+          <p className="flex text-[16px] leading-7 text-center text-light">
             برق و صنعت راد (راهکارهای الکتریکی و دیجیتال) با سال‌ها تجربه در
             مشاوره، طراحی و ساخت تابلوهای برق صنعتی فشار ضعیف و متوسط، مطابق با
             استانداردهای بین‌المللی به عنوان یکی از پیشگامان این صنعت شناخته
